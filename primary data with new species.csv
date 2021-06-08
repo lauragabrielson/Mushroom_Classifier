@@ -22,15 +22,15 @@ Gymnopus,Gymnopus luxurians,[p],"[3, 11]","[x, f, s]",[s],"[n, p]",[f],"[x, s]",
 ,,,,,,,,,,,,,,,,,,,,,,
 Mycena,Mycena atkinsoniana,[p],"[0.1, 3]",[x],"[s, t]","[n, y]",[t],[x],[d],"[y, e]","[2, 6]","[2, 3]",[e],[y],"[n, e, y]",[p],[f],[f],[f],[w],[l],"[u, a]"
 Mycena,Mycena galericulata,[p],"[2, 4]","[c, f]",[g],"[b, n]",[f],"[x, s]",[d],"[w, g]","[5, 9]","[2, 4]",[r],[f],[g],[p],[f],[f],[f],[w],[d],"[s, u, a]"
-Mycena,Mycena niveipes,[p],"[1.5, 7]","[c, x]","[g, h]","[g, w]",[f],[x],[c],[w],"[4, 10]","[2, 7]",[e],"[f, s]","[g, w]",[p],[f],[f],[f],[w],[d],"[s, u, a]"
+Mycena,Mycena niveipes,[p],"[1.5, 7]","[c, x]","[g, h]","[g, w]",[f],[x],[c],[w],"[4, 10]","[2, 7]",[e],"[i, s]","[g, w]",[p],[f],[f],[f],[w],[d],"[s, u, a]"
 ,,,,,,,,,,,,,,,,,,,,,,
 Rickenella,Rickenella fibula,[p],"[0.2, 1]","[c, x]",[s],[o],[f],[d],[d],"[w, o]","[0.5, 4.5]","[0.5, 1.5]",[e],[s],[o],[p],[f],[f],[f],[w],[d],"[s, u, a]"
 Xeromphalina,Xeromphalina tenuipes,[p],"[2.5, 4.5]","[x, f]","[y, s]","[o, n]",[f],[s],[c],"[w, y]","[3, 7.5]","[2, 4]",[e],[y],[o],[p],[f],[f],[f],[w],[d],"[s, u]"
 ,,,,,,,,,,,,,,,,,,,,,,
 Armillaria,Armillaria tabescens,[e],"[1, 4]","[x, f]","[y, s]",[n],[t],[d],[d],"[w, b]","[7.5, 20]","[5, 15]",[e],[s],"[w, b, n]",[p],[w],[f],[f],[w],[d],"[u, a]"
 ,,,,,,,,,,,,,,,,,,,,,,
-Tricholoma,Tricholoma aurantium,[p],"[3, 9]","[x, f]",[t],"[o, e]",[t],[x],[c],"[e, n]","[4, 8]","[10, 20]",[e],"[f, y]","[w, o]",[p],[f],[f],[f],[w],[d],"[u, a]"
-Tricholoma,Tricholoma caligatum,[e],"[4, 12]","[x, f]","[f, y]","[b, n]",[f],[a],[c],[w],"[4, 9]","[10, 30]",[e],"[f, y]","[w, n]",[p],[w],[t],[e],[w],[d],"[u, a]"
+Tricholoma,Tricholoma aurantium,[p],"[3, 9]","[x, f]",[t],"[o, e]",[t],[x],[c],"[e, n]","[4, 8]","[10, 20]",[e],"[i, y]","[w, o]",[p],[f],[f],[f],[w],[d],"[u, a]"
+Tricholoma,Tricholoma caligatum,[e],"[4, 12]","[x, f]","[i, y]","[b, n]",[f],[a],[c],[w],"[4, 9]","[10, 30]",[e],"[i, y]","[w, n]",[p],[w],[t],[e],[w],[d],"[u, a]"
 Tricholoma ,Tricholoma magnivelare,[e],"[5, 20]","[x, f]","[s, t, y]","[w, n]",[f],"[a, s]",[c],[w],"[4, 15]","[10, 50]",[e],"[s, y]",[w],[p],[w],[t],"[l, r, s]",[w],[d],"[u, a]"
 Tricholoma,Tricholoma venenatum,[p],"[2.5, 7]",[f],"[s, y]","[w, b]",[f],[s],[c],[w],"[3, 6]","[10, 20]",[s],"[s, k]",[w],[p],[f],[f],[f],[w],[d],"[s, u, a]"
 ,,,,,,,,,,,,,,,,,,,,,,
@@ -40,7 +40,7 @@ Cuphophyllus,Cuphphyllus virgineus,[e],"[1, 7]","[x, f]","[t, h]","[b, w]",[f],[
 Hygrophorus,Hygrophorus russula,[e],"[5, 12]","[p, x, f]","[t, s]","[b, n, p]",[t],"[a, d]",[c],"[w, p]","[3, 7]","[15, 35]",[e],[s],"[w, b, p]",[p],[f],[f],[f],[w],"[d, g]","[u, a]"
 ,,,,,,,,,,,,,,,,,,,,,,
 Russula,Russula cessans,[e],"[3, 8]","[x, f]",[s],"[e, u]",[f],[a],[c],[y],"[3, 5]","[ ,2]",[s],[s],[w],[p],[f],[f],[f],[y],[d],[a]
-Russula,Russula compacta,[e],"[3, 18]","[x, f]","[t, s, f]","[w, y, n]",[t],[a],[c],[w],"[3, 10]","[10, 35]",[e],[s],"[w, e, n]",[p],[f],[f],[f],[w],[d],"[u, a]"
+Russula,Russula compacta,[e],"[3, 18]","[x, f]","[t, s, i]","[w, y, n]",[t],[a],[c],[w],"[3, 10]","[10, 35]",[e],[s],"[w, e, n]",[p],[f],[f],[f],[w],[d],"[u, a]"
 Russula,Russula densifolia,[p],"[4, 15]","[x, f, s]","[t, s, y]","w, g, k]",[t],"[a, d]",[c],"[w, y, e, k]","[1.5, 9]","[10, 35]",[e],[s],"[w, e, k]",[p],[f],[f],[f],[w],[d],"[u, a]"
 Russula,Russula earlei,[e],"[3, 11]","[x, f]","[t, y]",[y],[f],"[a, d]",[d],"[w, y]","[2.5, 7]","[5, 25]",[e],[s],"[w, y]",[p],[f],[f],[f],[w],[d],"[u, a]"
 Russula,Russula fragrantissima,[p],"[7.5, 20]","[x, f, s]",[s],"[y, n]",[f],[a],[c],[w],"[7, 15]","[15, 60]",[e],[s],"[w, y, n, e]",[p],[f],[f],[f],[b],[b],"[u, a]"
@@ -52,21 +52,21 @@ Russula,Russula tenuiceps,[p],"[7, 12]","[x, f]","[t, s]",[e],[f],"[a, d]",[c],"
 Russula ,Russula uncialis,[p],"[2, 6]","[x, f]","[t, s]","[p, e]",[f],[a],[c],[w],"[1, 5]","[ , 1]",[e] ,[s],[w],[p],[f],[f],[f],[w],"[d, g]","[u, a]"
 Russula ,Russula variata,[e],"[5, 15]","[p, x, f]",[s],"[r, u]",[f],"[a, d]",[c],[w],"[3, 10]","[10, 30]",[e],[s],"[w, n]",[p],[f],[f],[f],[w],[d],"[s, u, a]"
 Russula,Russula vinacea,[e],"[4, 12]","[x, f]",[s],"[e, u]",[t],[a],[c],[w],"[3.5, 8]","[10, 30]",[e],[s],"[w, n]",[p],[f],[f],[f],[w],[d],"[s, u]"
-Russula,Russula virescens,[e],"[5, 15]","[p, x, f]","[s, y]","[r, y]",[f],"[x, e]",[c],[w],"[3, 9]","[20, 40]",[e],"[s, f]",[w],[p],[f],[f],[f],[w],[d],"[u, a]"
-Russula,Russula xerampelina,[e],"[4, 30]","[x, f]","[t, s]","[e, u]",[t],"a, d]",[c],"[w, y]","[3, 12]","[10, 40]",[e],[s],"[w, e, u]",[p],[f],[f],[f],"[b, y, o]",[d],"[u, a]"
+Russula,Russula virescens,[e],"[5, 15]","[p, x, f]","[s, y]","[r, y]",[f],"[x, e]",[c],[w],"[3, 9]","[20, 40]",[e],"[s, i]",[w],[p],[f],[f],[f],[w],[d],"[u, a]"
+Russula,Russula xerampelina,[e],"[4, 30]","[x, f]","[t, s]","[e, u]",[t],"[a, d]",[c],"[w, y]","[3, 12]","[10, 40]",[e],[s],"[w, e, u]",[p],[f],[f],[f],"[b, y, o]",[d],"[u, a]"
 ,,,,,,,,,,,,,,,,,,,,,,
-Lactarius,Lactarius allardii,,,,,,,,,,,,,,,,,,,,,
-,Lactarius aquifluus,,,,,,,,,,,,,,,,,,,,,
-,Lactarius argillaceifolius,,,,,,,,,,,,,,,,,,,,,
-,Lactarius atroviridis,,,,,,,,,,,,,,,,,,,,,
-,Lactarius camphoratus,,,,,,,,,,,,,,,,,,,,,
-,Lactarius cheidonium,,,,,,,,,,,,,,,,,,,,,
-,Lactarius controversus,,,,,,,,,,,,,,,,,,,,,
-,Lactarius fumosus,,,,,,,,,,,,,,,,,,,,,
-,Lactarius glaucescens,,,,,,,,,,,,,,,,,,,,,
-,Lactarius luteolus,,,,,,,,,,,,,,,,,,,,,
-,Lactarius pubescens,,,,,,,,,,,,,,,,,,,,,
-,Lactarius scrobiculatus,,,,,,,,,,,,,,,,,,,,,
-,Lactarius subpalustris,,,,,,,,,,,,,,,,,,,,,
-,Lactarius thyinos,,,,,,,,,,,,,,,,,,,,,
-,Lactarius volemus,,,,,,,,,,,,,,,,,,,,,
+Lactarius,Lactarius allardii,[p],"[4, 20]","[x, s]",[s],"[b, p, e]",[t],"[a, d]",[c],"[w, b]","[2, 7]","[10, 30]",[e],[s],"[w, p]",[p],[f],[f],[f],"[w, y]",[d],"[u, a]"
+Lactarius,Lactarius helvus,[p],"[3, 13]","[x, f, s]","[d, y]",[n],[t],"[a, d]",[c],"[w, y]","[3, 10]","[ , 20]",[e],[s],"[o, p, n]",[p],[f],[f],[f],[y],"[d, h]","[u, a]"
+Lactarius,Lactarius argillaceifolius,[p],"[3, 18]",[x],"[t, s]",[n],[t],[d],[c],"[w, n]","[3, 9]","[10, 35]",[e],"[t, s]","[b, n]",[p],[f],[f],[f],[y],[d],"[s, u, a]"
+Lactarius,Lactarius atroviridis,[p],"[3, 15]",[x],"[t, y]",[r],[t],"[a, d]",[c],[p],"[2, 8]","[10, 25]",[e],"[t, y]",[r],[p],[f],[f],[f],[w],[d],"[u,a]"
+Lactarius,Lactarius camphoratus,[e],"[1, 4]",[x],[s],"[n, e]",[t],"[a, d]",[c],"[w, p]","[1.5, 6]","[ , 10]",[e],[s],"[n, e]",[p],[f],[f],[f],"[w, y]",[d],"[s, u, a]"
+Lactarius,Lactarius chelidonium,[e],"[3, 12]",[x],"[t, y]","[l, y, n, r]",[t],[d],[c],[y],"[2, 6]","[10, 30]",[e],[s],"[l, y, n]",[p],[f],[f],[f],"[b, y]",[d],[a]
+Lactarius,Lactarius controversus,[e],"[7, 30]","[x, f, s]","[t, f]","[w, p, u]",[t],"[a, d]",[c],[p],"[2.5, 10]","[15, 40]",[e],"[t, s]",[w],[p],[f],[f],[f],"[w, p]",[d],"[u, a]"
+Lactarius,Lactarius fumosus,[p],"[3, 10]","[x, f]",[s],"[b, n]",[t],"[a, d]",[c],"[w, b]","[4, 11]","[ , 15]",[e],[s],[b],[p],[f],[f],[f],[b],[d],"[u, a]"
+Lactarius,Lactarius glaucescens,[p],"[4, 11]","[x, f, s]",[s],[w],[t],[d],[c],[w],"[3, 10]","[10, 20]",[e],[s],[w],[p],[f],[f],[f],[b],[d],[u]
+Lactarius,Lactarius luteolus,[e],"[2.5, 8]","[x, s]",[s],"[w, b]",[t],"[a, d]",[c],"[w, b]","[2.5, 6]","[5, 10]",[e],[s],"[w, n]",[p],[f],[f],[f],[w],[d],"[u, a]"
+Lactarius,Lactarius pubescens,[p],"[3, 10]","[x, s]","[t, i]","[w, p]",[t],[d],[c],"[w, p]","[2, 8]","[10, 20]",[e],[s],"[w, p]",[p],[f],[f],[f],[w],[d],"[u, a]"
+Lactarius,Lactarius scrobiculatus,[p],"[4, 12]","[x, s]","[t, i]","[w, y, n]",[t],[d],[c],"[w, y, n]","[3, 11]","[10, 35]",[e],[s],"[w, y, n]",[p],[f],[f],[f],[w],[d],"[u, a]"
+Lactarius,Lactarius subpalustris,[p],"[5, 20]","[x, s]",[t],"[g, y, n]",[t],[d],[c],"[w, u, n]","[4, 10]","[15, 25]",[e],"[t, s]","[w, y, n]",[p],[f],[f],[f],[y],[d],"[u, a]"
+Lactarius,Lactarius thyinos,[e],"[3, 9]","[x, f, s]",[t],[o],[t],"[a, d]",[c],[o],"[4, 8]","[12, 20]",[e],[t],[o],[p],[f],[f],[f],"[w, y]",[d],"[u, a]"
+Lactarius,Lactifluus volemus,[e],"[3, 13]","[x, f, s]","[s, w]","[o, n]",[t],"[a, d]",[c],[w],"[5, 10]","[5, 25]",[e],"[s, g]",[b],[p],[f],[f],[f],[w],[d],"[u, a]"
