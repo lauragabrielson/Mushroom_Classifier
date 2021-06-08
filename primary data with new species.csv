@@ -33,3 +33,40 @@ Tricholoma,Tricholoma aurantium,[p],"[3, 9]","[x, f]",[t],"[o, e]",[t],[x],[c],"
 Tricholoma,Tricholoma caligatum,[e],"[4, 12]","[x, f]","[f, y]","[b, n]",[f],[a],[c],[w],"[4, 9]","[10, 30]",[e],"[f, y]","[w, n]",[p],[w],[t],[e],[w],[d],"[u, a]"
 Tricholoma ,Tricholoma magnivelare,[e],"[5, 20]","[x, f]","[s, t, y]","[w, n]",[f],"[a, s]",[c],[w],"[4, 15]","[10, 50]",[e],"[s, y]",[w],[p],[w],[t],"[l, r, s]",[w],[d],"[u, a]"
 Tricholoma,Tricholoma venenatum,[p],"[2.5, 7]",[f],"[s, y]","[w, b]",[f],[s],[c],[w],"[3, 6]","[10, 20]",[s],"[s, k]",[w],[p],[f],[f],[f],[w],[d],"[s, u, a]"
+,,,,,,,,,,,,,,,,,,,,,,
+Hygrocybe,Hygrocybe cantharellus,[e],"[1, 3.5]",[x],"[s, k]","[o, e]",[f],[d],[d],"[y, o]","[3, 10]","[2, 8]",[e],[s],"[y, o]",[p],[f],[f],[f],[w],[d],"[u, a]"
+Hygrocybe,Hygrocybe punicea,[p],"[3, 15]","[x, f]","[t, s, y]","[e, n, o]",[f],[x],[d],"[b, y, o]","[3, 15]","[ ,15]",[e],[f],"[o, y]",[p],[f],[f],[f],[w],[d],"[s, u, a]"
+Cuphophyllus,Cuphphyllus virgineus,[e],"[1, 7]","[x, f]","[t, h]","[b, w]",[f],[d],[d],[w],"[2, 9]","[ ,1]",[e],[s],[w],[p],[f],[f],[f],[w],"[d, w, g]","[u, a]"
+Hygrophorus,Hygrophorus russula,[e],"[5, 12]","[p, x, f]","[t, s]","[b, n, p]",[t],"[a, d]",[c],"[w, p]","[3, 7]","[15, 35]",[e],[s],"[w, b, p]",[p],[f],[f],[f],[w],"[d, g]","[u, a]"
+,,,,,,,,,,,,,,,,,,,,,,
+Russula,Russula cessans,[e],"[3, 8]","[x, f]",[s],"[e, u]",[f],[a],[c],[y],"[3, 5]","[ ,2]",[s],[s],[w],[p],[f],[f],[f],[y],[d],[a]
+Russula,Russula compacta,[e],"[3, 18]","[x, f]","[t, s, f]","[w, y, n]",[t],[a],[c],[w],"[3, 10]","[10, 35]",[e],[s],"[w, e, n]",[p],[f],[f],[f],[w],[d],"[u, a]"
+Russula,Russula densifolia,[p],"[4, 15]","[x, f, s]","[t, s, y]","w, g, k]",[t],"[a, d]",[c],"[w, y, e, k]","[1.5, 9]","[10, 35]",[e],[s],"[w, e, k]",[p],[f],[f],[f],[w],[d],"[u, a]"
+Russula,Russula earlei,[e],"[3, 11]","[x, f]","[t, y]",[y],[f],"[a, d]",[d],"[w, y]","[2.5, 7]","[5, 25]",[e],[s],"[w, y]",[p],[f],[f],[f],[w],[d],"[u, a]"
+Russula,Russula fragrantissima,[p],"[7.5, 20]","[x, f, s]",[s],"[y, n]",[f],[a],[c],[w],"[7, 15]","[15, 60]",[e],[s],"[w, y, n, e]",[p],[f],[f],[f],[b],[b],"[u, a]"
+Russula ,Russula mariae,[e],"[2, 10]","[x, f, s]","[s, y]","[u, e, p, n]",[f],"[a, d]",[c],"[w, y]","[2, 6]","[5, 20]",[e],"[s, t]","[u, p]",[p],[f],[f],[f],[y],[d],"[s, u, a]"
+Russula ,Russual mutabilis,[p],"[4, 8]","[x, f]","[t, s]","[o, n, e]",[t],"[a, d]",[c],"[w, e]","[2, 6]","[10, 30]",[e],[s],"[w, y, o, e]",[p],[f],[f],[f],[b],[d],"[u, a]"
+Russula ,Russula pectinatoides,[p],"[2.5, 8]","[x, f]","[t, s]","[y, n]",[t],"[x, s]",[c],"[b, y]","[1.5, 7]","[5, 20]",[e],[s],"[y, n, e]",[p],[f],[f],[f],[b],[d],"[u, a]"
+Russula ,Russula pulchra,[p],"[5, 10]","[x, f]","[t, s]","[e, p, o]",[f],"[a, d]",[d],"[w, b]","[3, 7]","[10, 20]",[e],[s],"[w, p]",[p],[f],[f],[f],[b],[d],"[u, a]"
+Russula,Russula tenuiceps,[p],"[7, 12]","[x, f]","[t, s]",[e],[f],"[a, d]",[c],"[w, y]","[5, 9]","[20, 25]",[e],[s],"[w, e]",[p],[f],[f],[f],"[y, o]",[d],"[u, a]"
+Russula ,Russula uncialis,[p],"[2, 6]","[x, f]","[t, s]","[p, e]",[f],[a],[c],[w],"[1, 5]","[ , 1]",[e] ,[s],[w],[p],[f],[f],[f],[w],"[d, g]","[u, a]"
+Russula ,Russula variata,[e],"[5, 15]","[p, x, f]",[s],"[r, u]",[f],"[a, d]",[c],[w],"[3, 10]","[10, 30]",[e],[s],"[w, n]",[p],[f],[f],[f],[w],[d],"[s, u, a]"
+Russula,Russula vinacea,[e],"[4, 12]","[x, f]",[s],"[e, u]",[t],[a],[c],[w],"[3.5, 8]","[10, 30]",[e],[s],"[w, n]",[p],[f],[f],[f],[w],[d],"[s, u]"
+Russula,Russula virescens,[e],"[5, 15]","[p, x, f]","[s, y]","[r, y]",[f],"[x, e]",[c],[w],"[3, 9]","[20, 40]",[e],"[s, f]",[w],[p],[f],[f],[f],[w],[d],"[u, a]"
+Russula,Russula xerampelina,[e],"[4, 30]","[x, f]","[t, s]","[e, u]",[t],"a, d]",[c],"[w, y]","[3, 12]","[10, 40]",[e],[s],"[w, e, u]",[p],[f],[f],[f],"[b, y, o]",[d],"[u, a]"
+,,,,,,,,,,,,,,,,,,,,,,
+Lactarius,Lactarius allardii,,,,,,,,,,,,,,,,,,,,,
+,Lactarius aquifluus,,,,,,,,,,,,,,,,,,,,,
+,Lactarius argillaceifolius,,,,,,,,,,,,,,,,,,,,,
+,Lactarius atroviridis,,,,,,,,,,,,,,,,,,,,,
+,Lactarius camphoratus,,,,,,,,,,,,,,,,,,,,,
+,Lactarius cheidonium,,,,,,,,,,,,,,,,,,,,,
+,Lactarius controversus,,,,,,,,,,,,,,,,,,,,,
+,Lactarius fumosus,,,,,,,,,,,,,,,,,,,,,
+,Lactarius glaucescens,,,,,,,,,,,,,,,,,,,,,
+,Lactarius luteolus,,,,,,,,,,,,,,,,,,,,,
+,Lactarius pubescens,,,,,,,,,,,,,,,,,,,,,
+,Lactarius scrobiculatus,,,,,,,,,,,,,,,,,,,,,
+,Lactarius subpalustris,,,,,,,,,,,,,,,,,,,,,
+,Lactarius thyinos,,,,,,,,,,,,,,,,,,,,,
+,Lactarius volemus,,,,,,,,,,,,,,,,,,,,,
