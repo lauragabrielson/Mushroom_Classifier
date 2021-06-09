@@ -1,3 +1,7 @@
+console.log('d3_bar.js loaded')
+
+dataFile = "../static/data/bar_chart_csv/gill_attachment.csv"
+
 var svgWidth = 960;
 var svgHeight = 660;
 
@@ -24,7 +28,7 @@ var chartGroup = svg.append("g")
   .attr("transform", `translate(${chartMargin.left}, ${chartMargin.top})`);
 
 // Load data
-d3.csv("bar_chart_csv/cap_surface.csv").then(function(mushData) {
+d3.csv(dataFile).then(function(mushData) {
 
   console.log(mushData);
 
