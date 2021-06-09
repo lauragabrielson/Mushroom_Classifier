@@ -112,3 +112,5 @@ Boletus,Boletus variipes,[e],"[6, 20]",[x],[s],"[b, n, g]",[f],[f],[f],[f],"[8, 
 Suillus,Suillus americanus,[e],"[3, 10]","[x, o]",[t],"[y, n]",[t],[f],[f],[f],"[3, 10]","[0, 10]",[e],[y],[n],[p],[f],[f],[f],[n],[d],"[u, a]"
 Suillus,Suillus cavipes,[e],"[3, 10]",[x],[i],"[y, e, n]",[f],[f],[f],[f],"[4, 9]","[5, 15]",[b],"[s, i]","[y, n]",[p],[w],[t],[e],[n],[d],[a]
 Suillus,Suillus punctipes,[e],"[3, 10]",[x],"[t, s]","[y, n]",[f],[f],[f],[f],"[4, 9]","[10, 15]","[e, s]",[y],"[y, n]",[p],[f],[f],[f],[n],[d],"[u, a]"
+,,,,,,,,,,,,,,,,,,,,,,
+Hygrophorus,Hygrophorus occidentalis,[p],"[2, 8]","[x, f]",[t],"[w, n, g]",[f],"[a, d]",[d],[w],"[2, 7]","[3, 10]",[e],[t],[w],[p],[f],[f],[f],[w],[d],[a]
