@@ -24,7 +24,7 @@ var chartGroup = svg.append("g")
   .attr("transform", `translate(${chartMargin.left}, ${chartMargin.top})`);
 
 // Load data
-d3.csv("bar_chart_csv/cap_shape.csv").then(function(mushData) {
+d3.csv("bar_chart_csv/cap_surface.csv").then(function(mushData) {
 
   console.log(mushData);
 
