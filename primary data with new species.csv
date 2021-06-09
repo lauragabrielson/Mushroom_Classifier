@@ -114,3 +114,6 @@ Suillus,Suillus cavipes,[e],"[3, 10]",[x],[i],"[y, e, n]",[f],[f],[f],[f],"[4, 9
 Suillus,Suillus punctipes,[e],"[3, 10]",[x],"[t, s]","[y, n]",[f],[f],[f],[f],"[4, 9]","[10, 15]","[e, s]",[y],"[y, n]",[p],[f],[f],[f],[n],[d],"[u, a]"
 ,,,,,,,,,,,,,,,,,,,,,,
 Hygrophorus,Hygrophorus occidentalis,[p],"[2, 8]","[x, f]",[t],"[w, n, g]",[f],"[a, d]",[d],[w],"[2, 7]","[3, 10]",[e],[t],[w],[p],[f],[f],[f],[w],[d],[a]
+,,,,,,,,,,,,,,,,,,,,,,
+Cantharellus,Cantharellus cinnabarinus,[e],"[1, 5]","[x, f]",[s],"[p, e]",[f],[f],[f],[f],"[1, 4]","[5, 15]",[e],[s],"[p, e]",[p],[f],[f],[f],"[w, p]",[d],"[u, a]"
+Cantharellus,Cantharellus minor,[e],"[0.5, 3]","[x, s]",[s],"[y, o]",[f],[f],[f],[f],"[1.5, 4]","[1, 7]",[e],[s],"[y, o]",[p],[f],[f],[f],[y],[d],"[u, a]"
