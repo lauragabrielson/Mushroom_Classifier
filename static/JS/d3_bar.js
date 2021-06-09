@@ -1,6 +1,6 @@
 console.log('d3_bar.js loaded')
 
-dataFile = "../static/data/bar_chart_csv/gill_attachment.csv"
+dataFile = "../static/data/bar_chart_csv/cap_color.csv"
 
 var svgWidth = 960;
 var svgHeight = 660;

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "aniron";
+  src: url("fonts/webfontkit-aniron/anirb___-webfont.woff");
+  src: url("fonts/webfontkit-aniron/anirb___-webfont.woff2") format("woff"),
+  /* url("CustomFont.otf") format("opentype"),
+  url("CustomFont.svg#filename") format("svg"); */
+  }
+
+  h1 {
+    font-family: 'aniron', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    }
