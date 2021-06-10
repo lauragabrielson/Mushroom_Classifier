@@ -117,3 +117,12 @@ Hygrophorus,Hygrophorus occidentalis,[p],"[2, 8]","[x, f]",[t],"[w, n, g]",[f],"
 ,,,,,,,,,,,,,,,,,,,,,,
 Cantharellus,Cantharellus cinnabarinus,[e],"[1, 5]","[x, f]",[s],"[p, e]",[f],[f],[f],[f],"[1, 4]","[5, 15]",[e],[s],"[p, e]",[p],[f],[f],[f],"[w, p]",[d],"[u, a]"
 Cantharellus,Cantharellus minor,[e],"[0.5, 3]","[x, s]",[s],"[y, o]",[f],[f],[f],[f],"[1.5, 4]","[1, 7]",[e],[s],"[y, o]",[p],[f],[f],[f],[y],[d],"[u, a]"
+,,,,,,,,,,,,,,,,,,,,,,
+Pleurotus,Pleurotus dryinus,[e],"[4, 12]",[x],[s],"[g, w]",[f],[d],[c],[w],"[4, 10]","[0, 3.5]",[e],[i],[w],[p],[f],[f],[f],"[w, g]",[d],"[a, w, s]"
+Pleurotus,Pleurotus pulmonarius,[e],"[2, 12]","[x, f]","[h, s]","[w, b]",[f],[d],[c],[w],"[1, 7]","[0, 15]",[e],[s],[w],[p],[f],[f],[f],"[w, g]",[d],"[u, a, w]"
+,,,,,,,,,,,,,,,,,,,,,,
+Panellus,Panellus stipticus,[p],"[1, 3]",[x],"[I, w]","[y, n, w]",[f],[e],[c],"[y, n]",[0.1],[5],[e],[p],[p],[p],[f],[f],[f],[w],[d],"[s, u, a]"
+,,,,,,,,,,,,,,,,,,,,,,
+Gyromitra,Gyromitra caroliniana,[e],"[5, 10]",[o],[w],"[n, e]",[t],[f],[f],[f],"[6, 10]","[40, 60]",[e],[w],[w],[p],[f],[f],[f],[w],[d],[s]
+,,,,,,,,,,,,,,,,,,,,,,
+Helvella ,Helvella sulcata,[p],"[1, 5]",[o],[w],"[g, k]",[f],[f],[f],[f],"[1, 6]","[0, 20]",[e],[g],[w],[p],[f],[f],[f],[w],[d],"[s, u, a]"
