@@ -33,7 +33,7 @@
 
   .card-body {
     background-color: #fffff0;
-    padding: 10px;
+    padding: 20px;
   }
 
   .my-button {
@@ -57,5 +57,12 @@
   }
 
   .visual {
-    background-color: #fffff0;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    vertical-align: middle;
+  }
+
+  .button-group {
+    display: inline-block;
   }

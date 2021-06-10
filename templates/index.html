@@ -22,15 +22,15 @@
 <body>
   <div class="container-fluid" style="background-color: #7D6B7D">
     <header>
-      <div class="col-md-2">
-        <img src="../static/images/mushroom2.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: 100px;" width="50%" height="50%">
+      <div class="col-md-3">
+        <img src="../static/images/mushroom2.png" style="margin-top: 20px; margin-bottom: 20px; vertical-align: middle;" align="right">
       </div>
-      <div class="col-md-8">
+      <div class="col-md-6">
         <center><h1><strong>A Shortcut to Mushrooms</strong></h1></center>
         <center><h3><i>All fungi are edible. Some fungi are only edible once.</br>-Terry Pratchett</i></h3></center>
       </div>
-      <div class="col-md-2">
-        <img src="../static/images/mushroom1.png" style="margin-top: 20px; margin-bottom: 20px; margin-right: 100px;" width="50%" height="50%">
+      <div class="col-md-3">
+        <img src="../static/images/mushroom1.png" style="margin-top: 20px; margin-bottom: 20px; vertical-align: middle;" align="left">
       </div>
     </header>
   </div>
@@ -69,7 +69,24 @@
           </h2>
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
-          <center><div class="visual" id="explore-bar"></div></center>
+          <div style="display: table-cell;">
+            <div class="btn-group-vertical button-group" role="group" aria-label="Basic radio toggle button group">
+              <button type="radio" onclick="updateBar(dataClass)" class="btn btn-warning" name="btnradio" id="class" checked>Class</button>
+              <button type="radio" onclick="updateBar(dataCapColor)" class="btn btn-warning" name="btnradio" id="cap_color">Cap Color</button>
+              <button type="radio" onclick="updateBar(dataCapShape)" class="btn btn-warning" name="btnradio" id="cap_shape">Cap Shape</button>
+              <button type="radio" class="btn btn-warning" name="btnradio" id="bruise_bleed">Does it Bruise or Bleed?</button>
+              <button type="radio" class="btn btn-warning" name="btnradio" id="gill_attachment">Gill Attachment</button>
+              <button type="radio" class="btn btn-warning" name="btnradio" id="gill_color">Gill Color</button>
+              <button type="radio" class="btn btn-warning" name="btnradio" id="gill_spacing">Gill Spacing</button>
+              <button type="radio" class="btn btn-warning" name="btnradio" id="habitat">Habitat</button>
+              <button type="radio" class="btn btn-warning" name="btnradio" id="has_ring">Ring?</button>
+              <button type="radio" class="btn btn-warning" name="btnradio" id="ring_type">Ring Type</button>
+              <button type="radio" class="btn btn-warning" name="btnradio" id="season">Season</button>
+              <button type="radio" class="btn btn-warning" name="btnradio" id="stem_color">Stem Color</button>
+            </div>
+
+            <div style="display: inline-block;" id="explore-bar"></div>
+          </div>
           <div class="card-body">
             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
           </div>
