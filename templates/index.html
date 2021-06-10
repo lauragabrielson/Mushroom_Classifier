@@ -4,7 +4,7 @@
 <head>
   <style>
     body {
-      background-image: url('../static/images/wallpaper.png');
+      background-image: url('../static/images/wallpaper2.png');
     }
   </style>
   <link rel='icon' href='../static/images/favicon.ico' type='image/x-icon'/ >
@@ -22,11 +22,76 @@
 <body>
   <div class="container-fluid" style="background-color: #7D6B7D">
     <header>
-      <div>
+      <div class="col-md-2">
+        <img src="../static/images/mushroom2.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: 100px;" width="50%" height="50%">
+      </div>
+      <div class="col-md-8">
         <center><h1><strong>A Shortcut to Mushrooms</strong></h1></center>
         <center><h3><i>All fungi are edible. Some fungi are only edible once.</br>-Terry Pratchett</i></h3></center>
       </div>
+      <div class="col-md-2">
+        <img src="../static/images/mushroom1.png" style="margin-top: 20px; margin-bottom: 20px; margin-right: 100px;" width="50%" height="50%">
+      </div>
     </header>
+  </div>
+
+  <div class="container">
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <center>
+            <button class="btn btn-link my-button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              INTRODUCTION
+            </button>
+            </center>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+          <div class="card-body">
+              Here is where we will explain what this website is and does. A few ideas for what can go here:
+              <ul>
+                <li>Relevant links</li>
+                <li>Lay out issues we came across</li>
+                <li>methods used to transform data</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <center>
+            <button class="btn btn-link collapsed my-button" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              EXPLORE THE DATA
+            </button>
+            </center>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+          <center><div class="visual" id="explore-bar"></div></center>
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <center>
+            <button class="btn btn-link collapsed my-button" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              MACHINE LEARNING
+            </button>
+            </center>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
     <!-- Add bootstrap scripts -->
@@ -46,7 +111,9 @@
 </body>
 
 <!-- credit -->
-<footer>
+<footer style="margin-top: 75px;">
+  <center>
   <a href='https://www.freepik.com/vectors/background'>Background and favicon vector created by pikisuperstar - www.freepik.com</a>
+  </center>
 </footer>
 </html>
