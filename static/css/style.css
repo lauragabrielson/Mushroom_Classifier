@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "aniron";
+  src: url("fonts/webfontkit-aniron/anirb___-webfont.woff");
+  src: url("fonts/webfontkit-aniron/anirb___-webfont.woff2") format("woff"),
+  /* url("CustomFont.otf") format("opentype"),
+  url("CustomFont.svg#filename") format("svg"); */
+  }
+
+  h1 {
+    font-family: 'aniron', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    color: #FFF587;
+    text-shadow: 3px 3px 5px #FF8C64;
+    }
+
+  h2 {
+    color: #FFE49A;
+  }
+
+  h3 {
+    color: #FFE49A;
+  }
+
+  .container {
+    margin-top: 30px;
+    background-color: #7d6c7d4d;
+  }
+
+  .card-header {
+    background-color: #FFF1E0;
+  }
+
+  .card-body {
+    background-color: #fffff0;
+    padding: 10px;
+  }
+
+  .my-button {
+    font-family: 'aniron', Arial, sans-serif;
+    color: #F4876F;
+  }
+
+  .my-button:hover {
+    font-family: 'aniron', Arial, sans-serif;
+    color: #ef4e2a;
+  }
+
+  .my-button:active {
+    font-family: 'aniron', Arial, sans-serif;
+    color: #ef4e2a;
+  }
+
+  .a:active {
+    font-family: 'aniron', Arial, sans-serif;
+    color: #ef4e2a;
+  }
+
+  .visual {
+    background-color: #fffff0;
+  }

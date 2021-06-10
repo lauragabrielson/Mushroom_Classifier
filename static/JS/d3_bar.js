@@ -1,5 +1,9 @@
-var svgWidth = 960;
-var svgHeight = 660;
+console.log('d3_bar.js loaded')
+
+dataFile = "../static/data/bar_chart_csv/cap_surface.csv"
+
+var svgWidth = 800;
+var svgHeight = 500;
 
 // Define the chart's margins as an object
 var chartMargin = {
@@ -14,17 +18,19 @@ var chartWidth = svgWidth - chartMargin.left - chartMargin.right;
 var chartHeight = svgHeight - chartMargin.top - chartMargin.bottom;
 
 // Select body, append SVG area to it, and set the dimensions
-var svg = d3.select("body")
+var svg = d3.select("#explore-bar")
   .append("svg")
   .attr("height", svgHeight)
-  .attr("width", svgWidth);
+  .attr("width", svgWidth)
+  .style("background-color", "#f2f2f2")
+  .style("margin", "20px");
 
 // Append a group to the SVG area, translate to right and bottom
 var chartGroup = svg.append("g")
   .attr("transform", `translate(${chartMargin.left}, ${chartMargin.top})`);
 
 // Load data
-d3.csv("bar_chart_csv/cap_surface.csv").then(function(mushData) {
+d3.csv(dataFile).then(function(mushData) {
 
   console.log(mushData);
 
