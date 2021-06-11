@@ -1,5 +1,5 @@
 family;name;class;cap-diameter (cm);cap-shape;cap-surface;cap-color;does-bruise-or-bleed;gill-attachment;gill-spacing;gill-color;stem-height (cm);stem-width (mm);stem-root;stem-surface;stem-color;veil-type;veil-color;has-ring;ring-type;spore-print-color;habitat;season
-Amanita;Amanita vaginata;[e];[5, 10];[c, x, f];[g, y, s];[g,  n];[f];[e];[c];[w];[8, 22];[10, 20];[e];[k, g];[w];[u];[w];[f];[f];[w];[d, g];[s, u, a]
+Amanita;Amanita vaginata;[e];[5, 10];[c, x, f];[g, y, s];[g, n];[f];[e];[c];[w];[8, 22];[10, 20];[e];[k, g];[w];[u];[w];[f];[f];[w];[d, g];[s, u, a]
 Amanita;Saproamanita thiersii;[p];[3.5, 10];[x];[y, s];[w];[t];[e];[c, d];[w, y];[8, 20];[10, 20];[b];[s, t];[w];[u];[w];[t];[p];[w];[g, m];[u, a]
 Amanita;Amanita russuloides;[p];[3, 9];[x];[t, g, y, s];[y, b];[f];[e];[c];[w];[4, 9];[5, 15];[b];[s, i];[w];[u];[w];[t];[e];[w];[d, g];[u, a]
 Amanita;Amanita flavorubescens;[p];[4.5, 14];[x, f];[y, t, s];[y];[t];[e];[c];[w];[6, 15];[5, 15];[b];[y, s];[y];[u];[y];[t];[r];[w];[d, u];[s, u, a]
