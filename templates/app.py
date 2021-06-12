@@ -42,15 +42,15 @@ def predict():
 
     # Ok this is where we add all the additional features
     
+    # Read the value selected for cap surface
+    cap_surface = request.form.getlist('cap_surfaces')
+    # Extend feature with array from cap surface value
+    features.extend(cap_surface)
+
     # Read the value selected for cap color
     cap_color = request.form.getlist('cap_colors')
     # Extend feature with array from cap color value
     features.extend(cap_color)
-
-     # Read the value selected for cap surface
-    cap_surface = request.form.getlist('cap_surfaces')
-    # Extend feature with array from cap surface value
-    features.extend(cap_surface)
 
      # Read the value selected for bruises_bleed
     bruise_bleed = request.form.getlist('bruise_bleed')
