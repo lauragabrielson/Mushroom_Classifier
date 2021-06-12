@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>A Shortcut to Mushrooms</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
   <!-- Custom CSS  -->
   <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
@@ -22,100 +22,111 @@
 <body>
   <div class="container-fluid" style="background-color: #7D6B7D">
     <header>
-      <div class="col-md-3">
-        <img src="../static/images/mushroom2.png" style="margin-top: 20px; margin-bottom: 20px; vertical-align: middle;" align="right">
-      </div>
-      <div class="col-md-6">
-        <center><h1><strong>A Shortcut to Mushrooms</strong></h1></center>
-        <center><h3><i>All fungi are edible. Some fungi are only edible once.</br>-Terry Pratchett</i></h3></center>
-      </div>
-      <div class="col-md-3">
-        <img src="../static/images/mushroom1.png" style="margin-top: 20px; margin-bottom: 20px; vertical-align: middle;" align="left">
-      </div>
+      <center>
+        <div class="header-group">
+          <img src="../static/images/mushroom2.png" style="margin-right: 50px;vertical-align: middle;">
+        </div>
+        <div class="header-group" style="vertical-align: middle;">
+          <center><h1>A Shortcut to Mushrooms</h1></center>
+          <center><h3><i>All fungi are edible. Some fungi are only edible once.</br>-Terry Pratchett</i></h3></center>
+        </div>
+        <div class="header-group">
+          <img src="../static/images/mushroom1.png" style="margin-left: 50px; vertical-align: middle;">
+        </div>
+      </center>
     </header>
   </div>
 
   <div class="container">
-    <div class="accordion" id="accordionExample">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h2 class="mb-0">
-            <center>
-            <button class="btn btn-link my-button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="btn accordion-button my-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-pressed="true" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
               INTRODUCTION
-            </button>
-            </center>
-          </h2>
-        </div>
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
-          <div class="card-body">
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <div class="accordion-body">
               Here is where we will explain what this website is and does. A few ideas for what can go here:
-              <ul>
-                <li>Relevant links</li>
-                <li>Lay out issues we came across</li>
-                <li>methods used to transform data</li>
-              </ul>
+                <ul>
+                  <li>Relevant links</li>
+                  <li>Lay out issues we came across</li>
+                  <li>methods used to transform data</li>
+                </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h2 class="mb-0">
-            <center>
-            <button class="btn btn-link collapsed my-button" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              EXPLORE THE DATA
-            </button>
-            </center>
-          </h2>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button my-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-pressed="true" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            EXPLORE THE DATA
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
           <div style="display: table-cell;">
+
             <div class="btn-group-vertical button-group" role="group" aria-label="Basic radio toggle button group">
-              <button type="radio" onclick="updateBar(dataClass)" class="btn btn-warning" name="btnradio" id="class" checked>Class</button>
-              <button type="radio" onclick="updateBar(dataCapColor)" class="btn btn-warning" name="btnradio" id="cap_color">Cap Color</button>
-              <button type="radio" onclick="updateBar(dataCapShape)" class="btn btn-warning" name="btnradio" id="cap_shape">Cap Shape</button>
-              <button type="radio" class="btn btn-warning" name="btnradio" id="bruise_bleed">Does it Bruise or Bleed?</button>
-              <button type="radio" class="btn btn-warning" name="btnradio" id="gill_attachment">Gill Attachment</button>
-              <button type="radio" class="btn btn-warning" name="btnradio" id="gill_color">Gill Color</button>
-              <button type="radio" class="btn btn-warning" name="btnradio" id="gill_spacing">Gill Spacing</button>
-              <button type="radio" class="btn btn-warning" name="btnradio" id="habitat">Habitat</button>
-              <button type="radio" class="btn btn-warning" name="btnradio" id="has_ring">Ring?</button>
-              <button type="radio" class="btn btn-warning" name="btnradio" id="ring_type">Ring Type</button>
-              <button type="radio" class="btn btn-warning" name="btnradio" id="season">Season</button>
-              <button type="radio" class="btn btn-warning" name="btnradio" id="stem_color">Stem Color</button>
+              <input type="radio" onclick="updateBar(dataClass)" class="btn-check" name="btnradio" id="class" autocomplete="off" checked>
+              <label class="btn btn-outline-success" for="class">Class</label>
+            
+              <input type="radio" onclick="updateBar(dataCapColor)" class="btn-check" name="btnradio" id="cap_color" autocomplete="off">
+              <label class="btn btn-outline-success" for="cap_color">Cap Color</label>
+
+              <input type="radio" onclick="updateBar(dataCapShape)" class="btn-check" name="btnradio" id="cap_shape" autocomplete="off">
+              <label class="btn btn-outline-success" for="cap_shape">Cap Shape</label>
+
+              <input type="radio" onclick="updateBar(dataBruiseBleed)" class="btn-check" name="btnradio" id="bruise_bleed" autocomplete="off">
+              <label class="btn btn-outline-success" for="bruise_bleed">Does It Bruise or Bleed?</label>
+
+              <input type="radio" onclick="updateBar(dataGillAttachment)" class="btn-check" name="btnradio" id="gill_attachment" autocomplete="off">
+              <label class="btn btn-outline-success" for="gill_attachment">Gill Attachment</label>
+
+              <input type="radio" onclick="updateBar(dataGillColor)" class="btn-check" name="btnradio" id="gill_color" autocomplete="off">
+              <label class="btn btn-outline-success" for="gill_color">Gill Color</label>
+
+              <input type="radio" onclick="updateBar(dataGillSpacing)" class="btn-check" name="btnradio" id="gill_spacing" autocomplete="off">
+              <label class="btn btn-outline-success" for="gill_spacing">Gill Spacing</label>
+
+              <input type="radio" onclick="updateBar(dataHabitat)" class="btn-check" name="btnradio" id="habitat" autocomplete="off">
+              <label class="btn btn-outline-success" for="habitat">Habitat</label>
+
+              <input type="radio" onclick="updateBar(dataRing)" class="btn-check" name="btnradio" id="has_ring" autocomplete="off">
+              <label class="btn btn-outline-success" for="has_ring">Does It Have a Ring</label>
+
+              <input type="radio" onclick="updateBar(dataRingType)" class="btn-check" name="btnradio" id="ring_type" autocomplete="off">
+              <label class="btn btn-outline-success" for="ring_type">Ring Type</label>
+
+              <input type="radio" onclick="updateBar(dataSeason)" class="btn-check" name="btnradio" id="season" autocomplete="off">
+              <label class="btn btn-outline-success" for="season">Season</label>
+
+              <input type="radio" onclick="updateBar(dataStemColor)" class="btn-check" name="btnradio" id="stem_color" autocomplete="off">
+              <label class="btn btn-outline-success" for="stem_color">Stem Color</label>
             </div>
 
             <div style="display: inline-block;" id="explore-bar"></div>
           </div>
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="mb-0">
-            <center>
-            <button class="btn btn-link collapsed my-button" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              MACHINE LEARNING
-            </button>
-            </center>
-          </h2>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button my-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-pressed="true" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            MAKE A PREDICTION
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
           </div>
         </div>
       </div>
     </div>
   </div>
 
-    <!-- Add bootstrap scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
     <!-- Add d3 -->
     <script src="https://d3js.org/d3.v5.min.js"></script>
 

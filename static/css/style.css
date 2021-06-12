@@ -12,6 +12,7 @@
     font-style:normal;
     color: #FFF587;
     text-shadow: 3px 3px 5px #FF8C64;
+    text-align: center;
     }
 
   h2 {
@@ -25,10 +26,7 @@
   .container {
     margin-top: 30px;
     background-color: #7d6c7d4d;
-  }
-
-  .card-header {
-    background-color: #FFF1E0;
+    padding: 0px;
   }
 
   .card-body {
@@ -36,19 +34,35 @@
     padding: 20px;
   }
 
-  .my-button {
+  .accordion-button.hover {
     font-family: 'aniron', Arial, sans-serif;
+    background-color: #FFE49A;
+    color: #ef4e2a;
+  }
+
+  .accordion-button.focus {
+    font-family: 'aniron', Arial, sans-serif;
+    background-color: #FFE49A;
+    color: #ef4e2a;
+  }
+
+  .accordion-button.active {
+    font-family: 'aniron', Arial, sans-serif;
+    background-color: #FFE49A;
+    color: #ef4e2a;
+  }
+
+  .accordion-button {
+    font-family: 'aniron', Arial, sans-serif;
+    background-color: #FFE49A;
     color: #F4876F;
+    text-align: center;
   }
 
-  .my-button:hover {
+  .accordion-button.collapsed {
     font-family: 'aniron', Arial, sans-serif;
-    color: #ef4e2a;
-  }
-
-  .my-button:active {
-    font-family: 'aniron', Arial, sans-serif;
-    color: #ef4e2a;
+    background-color: #FFE49A;
+    color: #F4876F;
   }
 
   .a:active {
@@ -57,12 +71,27 @@
   }
 
   .visual {
-    background-color: #f2f2f2;
+    background-color: #FFF1E0;
     border-radius: 10px;
     box-shadow: 5px 10px 8px #888888;
     vertical-align: middle;
   }
 
   .button-group {
+    margin-left: 20px;
+  }
+
+  .header-group {
     display: inline-block;
+  }
+
+  .btn-outline-success {
+    color: #EA765A;
+    border-color: #EA765A;
+  }
+
+  .btn.btn-outline-success.active {
+    color: #EA765A;
+    background-color: #EA765A;
+    border-color: #EA765A;
   }
