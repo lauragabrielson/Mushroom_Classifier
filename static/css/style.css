@@ -6,92 +6,142 @@
   url("CustomFont.svg#filename") format("svg"); */
   }
 
-  h1 {
-    font-family: 'aniron', Arial, sans-serif;
-    font-weight:normal;
-    font-style:normal;
-    color: #FFF587;
-    text-shadow: 3px 3px 5px #FF8C64;
-    text-align: center;
-    }
-
-  h2 {
-    color: #FFE49A;
+h1 {
+  font-family: 'aniron', Arial, sans-serif;
+  font-weight:normal;
+  font-style:normal;
+  color: #FFF587;
+  text-shadow: 3px 3px 5px #FF8C64;
+  text-align: center;
   }
 
-  h3 {
-    color: #FFE49A;
-  }
+h2 {
+  color: #FFE49A;
+}
 
-  .container {
-    margin-top: 30px;
-    background-color: #7d6c7d4d;
-    padding: 0px;
-  }
+h3 {
+  color: #FFE49A;
+}
 
-  .card-body {
-    background-color: #fffff0;
-    padding: 20px;
-  }
+.container {
+  margin-top: 30px;
+  background-color: #7d6c7d4d;
+  padding: 0px;
+}
 
-  .accordion-button.hover {
-    font-family: 'aniron', Arial, sans-serif;
-    background-color: #FFE49A;
-    color: #ef4e2a;
-  }
+.card-body {
+  background-color: #fffff0;
+  padding: 20px;
+}
 
-  .accordion-button.focus {
-    font-family: 'aniron', Arial, sans-serif;
-    background-color: #FFE49A;
-    color: #ef4e2a;
-  }
+/* .accordion-button {
+  font-family: 'aniron', Arial, sans-serif;
+  background-color: #FFE49A;
+  color: #F4876F;
+}
 
-  .accordion-button.active {
-    font-family: 'aniron', Arial, sans-serif;
-    background-color: #FFE49A;
-    color: #ef4e2a;
-  }
+.accordion-button.hover {
+  color: #ef4e2a;
+}
 
-  .accordion-button {
-    font-family: 'aniron', Arial, sans-serif;
-    background-color: #FFE49A;
-    color: #F4876F;
-    text-align: center;
-  }
+.accordion-button.hover {
+  color: #ef4e2a;
+} */
 
-  .accordion-button.collapsed {
-    font-family: 'aniron', Arial, sans-serif;
-    background-color: #FFE49A;
-    color: #F4876F;
-  }
+.my-button {
+  font-family: 'aniron', Arial, sans-serif;
+  background-color: #FFE49A;
+  color: #F4876F;
+}
 
-  .a:active {
-    font-family: 'aniron', Arial, sans-serif;
-    color: #ef4e2a;
-  }
+.my-button.hover {
+  background-color: #FFE49A;
+  color: #ef4e2a;
+}
 
-  .visual {
-    background-color: #FFF1E0;
-    border-radius: 10px;
-    box-shadow: 5px 10px 8px #888888;
-    vertical-align: middle;
-  }
+/* .accordion-button.hover {
+  font-family: 'aniron', Arial, sans-serif;
+  background-color: #FFE49A;
+  color: #ef4e2a;
+}
 
-  .button-group {
-    margin-left: 20px;
-  }
+.accordion-button.focus {
+  font-family: 'aniron', Arial, sans-serif;
+  background-color: #FFE49A;
+  color: #ef4e2a;
+}
 
-  .header-group {
-    display: inline-block;
-  }
+.accordion-button.active {
+  font-family: 'aniron', Arial, sans-serif;
+  background-color: #FFE49A;
+  color: #ef4e2a;
+}
 
-  .btn-outline-success {
-    color: #EA765A;
-    border-color: #EA765A;
-  }
+.accordion-button {
+  font-family: 'aniron', Arial, sans-serif;
+  background-color: #FFE49A;
+  color: #F4876F;
+  text-align: center;
+}
 
-  .btn.btn-outline-success.active {
-    color: #EA765A;
-    background-color: #EA765A;
-    border-color: #EA765A;
-  }
+.accordion-button.collapsed {
+  font-family: 'aniron', Arial, sans-serif;
+  background-color: #FFE49A;
+  color: #F4876F;
+} */
+
+/* .accordion-toggle.hover {
+  font-family: 'aniron', Arial, sans-serif;
+  background-color: #FFE49A;
+  color: #ef4e2a;
+}
+
+.accordion-toggle.focus {
+  font-family: 'aniron', Arial, sans-serif;
+  background-color: #FFE49A;
+  color: #ef4e2a;
+}
+
+.accordion-toggle.active {
+  font-family: 'aniron', Arial, sans-serif;
+  background-color: #FFE49A;
+  color: #ef4e2a;
+}
+
+.accordion-toggle {
+  font-family: 'aniron', Arial, sans-serif;
+  background-color: #FFE49A;
+  color: #F4876F;
+  text-align: center;
+}
+
+.accordion-toggle.collapsed {
+  font-family: 'aniron', Arial, sans-serif;
+  background-color: #FFE49A;
+  color: #F4876F;
+} */
+
+.visual {
+  background-color: #FFF1E0;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px #888888;
+  vertical-align: middle;
+}
+
+.button-group {
+  margin-left: 20px;
+}
+
+.header-group {
+  display: inline-block;
+}
+
+.axis-labels {
+  font-size: 14px;
+  text-anchor: middle;
+}
+
+.axisTitle {
+  font-size: 16px;
+  text-anchor: middle;
+}

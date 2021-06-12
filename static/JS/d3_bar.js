@@ -18,17 +18,16 @@ var svgWidth = 960;
 var svgHeight = 500;
 
 // Define the chart's margins as an object
-var chartMargin = {
+var margin = {
   top: 50,
   right: 50,
-  bottom: 50,
-  left: 50
+  bottom: 80,
+  left: 100
 };
 
 // Define dimensions of the chart area
-var chartWidth = svgWidth - chartMargin.left - chartMargin.right;
-var chartHeight = svgHeight - chartMargin.top - chartMargin.bottom;
-
+var chartWidth = svgWidth - margin.left - margin.right;
+var chartHeight = svgHeight - margin.top - margin.bottom;
 
 updateBar(dataClass);
 
@@ -48,7 +47,7 @@ function updateBar(ClickedData) {
 
   // Append a group to the SVG area, translate to right and bottom
   var chartGroup = svg.append("g")
-    .attr("transform", `translate(${chartMargin.left}, ${chartMargin.top})`);
+    .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
     // Load data
   d3.csv(ClickedData).then(function(mushData) {
@@ -79,10 +78,13 @@ function updateBar(ClickedData) {
     // Append two SVG group elements to the chartGroup area,
     // and create the bottom and left axes inside of them
     chartGroup.append("g")
+      .style('font-size', "12px")
+      // .class("axis-tick-markers")
       .call(leftAxis);
 
     chartGroup.append("g")
       .attr("transform", `translate(0, ${chartHeight})`)
+      .style("font-size", "14px")
       .call(bottomAxis);
 
     // Create one SVG rectangle per piece of mushData
@@ -105,6 +107,19 @@ function updateBar(ClickedData) {
       .attr("height", d => chartHeight - yLinearScale(d.count))
       .delay(function(d,i){return(i*100)});
 
+    chartGroup.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left + 15)
+      .attr("x", 0 - (chartHeight / 2))
+      .attr("dy", "1em")
+      .attr("class", "axis-labels")
+      .text("Count of Occurences in Training Set");
+
+    chartGroup.append("text")
+      .attr("transform", `translate(${(chartWidth / 2)}, ${chartHeight + margin.top})`)
+      .attr("class", "axis-labels")
+      .text("Category");
+
     chartGroup.selectAll("text")
       .data(mushData)
       .enter()
@@ -114,7 +129,7 @@ function updateBar(ClickedData) {
       .attr("x", d => xBandScale(d.value) + xBandScale.bandwidth() / 2)
       .attr("y", d => chartHeight - yLinearScale(d.count) + 15)
       .attr("font-family", "sans-serif")
-      .attr("font-size", "11px")
+      .attr("font-size", "13px")
       .attr("fill", "#black");
 
   }).catch(function(error) {
