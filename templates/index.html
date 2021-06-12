@@ -118,776 +118,448 @@
         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
           <div class="accordion-body">
 
-            <form>
+            <form action="{{url_for('predict')}}" method="post">
               <div class="row mb-3">
                 <label for="colFormLabelLg" class="col-sm col-form-label col-form-label-lg"> Cap Diameter (cm) </label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control form-control-lg" id="cap_diameter" placeholder="Enter a decimal between 0 and 62">
+                  <input type="text" class="form-control form-control-lg" id="cap_diameter" placeholder="Enter a decimal between 0 and 62">
                 </div>
               </div>
               <div class="row mb-3">
                 <label for="colFormLabelLg" class="col-sm col-form-label col-form-label-lg"> Stem Height (cm) </label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control form-control-lg" id="stem_height" placeholder="Enter a decimal between 0 and 36">
+                  <input type="text" class="form-control form-control-lg" id="stem_height" placeholder="Enter a decimal between 0 and 36">
                 </div>
               </div>
               <div class="row mb-3">
                 <label for="colFormLabelLg" class="col-sm col-form-label col-form-label-lg"> Stem Width (mm) </label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control form-control-lg" id="stem_width" placeholder="Enter a decimal between 0 and 100">
+                  <input type="text" class="form-control form-control-lg" id="stem_width" placeholder="Enter a decimal between 0 and 100">
                 </div>
               </div>
               <fieldset class="row mb-3">
                 <legend class="col-sm col-form-label col-form-label-lg">Cap Color</legend>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_colors" id="cap_color-black" value="[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_color-black">
+                <div class="btn-group">
+                    <input class="btn-check" type="radio" name="cap_colors" id="cap_color-black" value="[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="cap_color-black">
                       black
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_colors" id="cap_color-blue" value="[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_color-blue">
+                    <input class="btn-check" type="radio" name="cap_colors" id="cap_color-blue" value="[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="cap_color-blue">
                       blue
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_colors" id="cap_color-brown" value="[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_color-brown">
+                    <input class="btn-check" type="radio" name="cap_colors" id="cap_color-brown" value="[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="cap_color-brown">
                       brown
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_colors" id="cap_color-buff" value="[0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_color-buff">
+                    <input class="btn-check" type="radio" name="cap_colors" id="cap_color-buff" value="[0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="cap_color-buff">
                       buff
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_colors" id="cap_color-gray" value="[0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_color-gray">
+                    <input class="btn-check" type="radio" name="cap_colors" id="cap_color-gray" value="[0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="cap_color-gray">
                       gray
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_colors" id="cap_color-green" value="[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_color-green">
+                    <input class="btn-check" type="radio" name="cap_colors" id="cap_color-green" value="[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="cap_color-green">
                       green
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_colors" id="cap_color-orange" value="[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_color-orange">
+                    <input class="btn-check" type="radio" name="cap_colors" id="cap_color-orange" value="[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="cap_color-orange">
                       orange
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_colors" id="cap_color-pink" value="[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_color-pink">
+                    <input class="btn-check" type="radio" name="cap_colors" id="cap_color-pink" value="[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="cap_color-pink">
                       pink
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_colors" id="cap_color-purple" value="[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_color-purple">
+                    <input class="btn-check" type="radio" name="cap_colors" id="cap_color-purple" value="[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="cap_color-purple">
                       purple
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_colors" id="cap_color-red" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]">
-                    <label class="form-check-label" for="cap_color-red">
+                    <input class="btn-check" type="radio" name="cap_colors" id="cap_color-red" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]">
+                    <label class="btn btn-outline-success" for="cap_color-red">
                       red
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_colors" id="cap_color-white" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]">
-                    <label class="form-check-label" for="cap_color-white">
+                    <input class="btn-check" type="radio" name="cap_colors" id="cap_color-white" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]">
+                    <label class="btn btn-outline-success" for="cap_color-white">
                       white
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_colors" id="cap_color-yellow" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]">
-                    <label class="form-check-label" for="cap_color-yellow">
+                    <input class="btn-check" type="radio" name="cap_colors" id="cap_color-yellow" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]">
+                    <label class="btn btn-outline-success" for="cap_color-yellow">
                       yellow
                     </label>
                   </div>
-                </div>
               </fieldset>
               <fieldset class="row mb-3">
                 <legend class="col-sm col-form-label col-form-label-lg">Cap Shape</legend>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_shapes" id="cap_shape-bell" value="[1, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_shape-bell">
-                      bell
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_shapes" id="cap_shape-conical" value="[0, 1, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_shape-conical">
-                      conical
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_shapes" id="cap_shape-convex" value="[0, 0, 1, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_shape-convex">
-                      convex
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_shapes" id="cap_shape-flat" value="[0, 0, 0, 1, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_shape-flat">
-                      flat
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_shapes" id="cap_shape-others" value="[0, 0, 0, 0, 1, 0, 0]">
-                    <label class="form-check-label" for="cap_shape-others">
-                      others
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_shapes" id="cap_shape-spherical" value="[0, 0, 0, 0, 0, 1, 0]">
-                    <label class="form-check-label" for="cap_shape-spherical">
-                      spherical
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_shapes" id="cap_shape-sunken" value="[0, 0, 0, 0, 0, 0, 1]">
-                    <label class="form-check-label" for="cap_shape-sunken">
-                      sunken
-                    </label>
-                  </div>
+                <div class="btn-group">
+                  <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-bell" value="[1, 0, 0, 0, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="cap_shape-bell">
+                    bell
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-conical" value="[0, 1, 0, 0, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="cap_shape-conical">
+                    conical
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-convex" value="[0, 0, 1, 0, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="cap_shape-convex">
+                    convex
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-flat" value="[0, 0, 0, 1, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="cap_shape-flat">
+                    flat
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-others" value="[0, 0, 0, 0, 1, 0, 0]">
+                  <label class="btn btn-outline-success" for="cap_shape-others">
+                    others
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-spherical" value="[0, 0, 0, 0, 0, 1, 0]">
+                  <label class="btn btn-outline-success" for="cap_shape-spherical">
+                    spherical
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-sunken" value="[0, 0, 0, 0, 0, 0, 1]">
+                  <label class="btn btn-outline-success" for="cap_shape-sunken">
+                    sunken
+                  </label>
                 </div>
               </fieldset>
               <fieldset class="row mb-3">
                 <legend class="col-sm col-form-label col-form-label-lg">Cap Surface</legend>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_surfaces" id="cap_surface-dry" value="[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_surface-dry">
-                      dry
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_surfaces" id="cap_surface-fibrous" value="[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_surface-fibrous">
-                      fibrous
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_surfaces" id="cap_surface-fleshy" value="[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_surface-fleshy">
-                      fleshy
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_surfaces" id="cap_surface-grooves" value="[0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_surface-grooves">
-                      grooves
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_surfaces" id="cap_surface-leathery" value="[0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_surface-leathery">
-                      leathery
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_surfaces" id="cap_surface-scaly" value="[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_surface-scaly">
-                      scaly
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_surfaces" id="cap_surface-shiny" value="[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_surface-shiny">
-                      shiny
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_surfaces" id="cap_surface-silky" value="[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_surface-silky">
-                      silky
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_surfaces" id="cap_surface-smooth" value="[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]">
-                    <label class="form-check-label" for="cap_surface-smooth">
-                      smooth
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_surfaces" id="cap_surface-sticky" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]">
-                    <label class="form-check-label" for="cap_surface-sticky">
-                      sticky
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cap_surfaces" id="cap_surface-wrinkled" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]">
-                    <label class="form-check-label" for="cap_surface-wrinkled">
-                      wrinkled
-                    </label>
-                  </div>
+                <div class="btn-group">
+                  <input class="btn-check" type="radio" name="cap_surfaces" id="cap_surface-dry" value="[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="cap_surface-dry">
+                    dry
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_surfaces" id="cap_surface-fibrous" value="[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="cap_surface-fibrous">
+                    fibrous
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_surfaces" id="cap_surface-fleshy" value="[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="cap_surface-fleshy">
+                    fleshy
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_surfaces" id="cap_surface-grooves" value="[0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="cap_surface-grooves">
+                    grooves
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_surfaces" id="cap_surface-leathery" value="[0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="cap_surface-leathery">
+                    leathery
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_surfaces" id="cap_surface-scaly" value="[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="cap_surface-scaly">
+                    scaly
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_surfaces" id="cap_surface-shiny" value="[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="cap_surface-shiny">
+                    shiny
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_surfaces" id="cap_surface-silky" value="[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="cap_surface-silky">
+                    silky
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_surfaces" id="cap_surface-smooth" value="[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]">
+                  <label class="btn btn-outline-success" for="cap_surface-smooth">
+                    smooth
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_surfaces" id="cap_surface-sticky" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]">
+                  <label class="btn btn-outline-success" for="cap_surface-sticky">
+                    sticky
+                  </label>
+                  <input class="btn-check" type="radio" name="cap_surfaces" id="cap_surface-wrinkled" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]">
+                  <label class="btn btn-outline-success" for="cap_surface-wrinkled">
+                    wrinkled
+                  </label>
                 </div>
               </fieldset>
               <fieldset class="row mb-3">
                 <legend class="col-sm col-form-label col-form-label-lg">Does It Bruise or Bleed?</legend>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="bruise_bleed" id="bruise_bleed-yes" value="[0,1]">
-                    <label class="form-check-label" for="bruise_bleed-yes">
-                      yes
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="bruise_bleed" id="cap_shape-no" value="[1, 0]">
-                    <label class="form-check-label" for="bruise_bleed-no">
-                      no
-                    </label>
-                  </div>
+                <div class="btn-group">
+                  <input class="btn-check" type="radio" name="bruise_bleed" id="bruise_bleed-yes" value="[0,1]">
+                  <label class="btn btn-outline-success" for="bruise_bleed-yes">
+                    yes
+                  </label>
+                  <input class="btn-check" type="radio" name="bruise_bleed" id="bruise_bleed-no" value="[1, 0]">
+                  <label class="btn btn-outline-success" for="bruise_bleed-no">
+                    no
+                  </label>
                 </div>
               </fieldset>
               <fieldset class="row mb-3">
                 <legend class="col-sm col-form-label col-form-label-lg">Gill Attachment</legend>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_attachments" id="gill_attachment-adnate" value="[1, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="gill_attachment-adnate">
-                      adnate
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_attachments" id="gill_attachment-adnexed" value="[0, 1, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="gill_attachment-adnexed">
-                      adnexed
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_attachments" id="gill_attachment-decurrent" value="[0, 0, 1, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="gill_attachment-decurrent">
-                      decurrent
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_attachments" id="gill_attachment-free" value="[0, 0, 0, 1, 0, 0, 0]">
-                    <label class="form-check-label" for="gill_attachment-free">
-                      free
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_attachments" id="gill_attachment-none" value="[0, 0, 0, 0, 1, 0, 0]">
-                    <label class="form-check-label" for="gill_attachment-none">
-                      none
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_attachments" id="gill_attachment-pores" value="[0, 0, 0, 0, 0, 1, 0]">
-                    <label class="form-check-label" for="gill_attachment-pores">
-                      pores
-                    </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_attachments" id="gill_attachment-sinuate" value="[0, 0, 0, 0, 0, 0, 1]">
-                    <label class="form-check-label" for="gill_attachment-sinuate">
-                      sinuate
-                    </label>
-                  </div>
+                <div class="btn-group">
+                  <input class="btn-check" type="radio" name="gill_attachments" id="gill_attachment-adnate" value="[1, 0, 0, 0, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="gill_attachment-adnate">
+                    adnate
+                  </label>
+                  <input class="btn-check" type="radio" name="gill_attachments" id="gill_attachment-adnexed" value="[0, 1, 0, 0, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="gill_attachment-adnexed">
+                    adnexed
+                  </label>
+                  <input class="btn-check" type="radio" name="gill_attachments" id="gill_attachment-decurrent" value="[0, 0, 1, 0, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="gill_attachment-decurrent">
+                    decurrent
+                  </label>
+                  <input class="btn-check" type="radio" name="gill_attachments" id="gill_attachment-free" value="[0, 0, 0, 1, 0, 0, 0]">
+                  <label class="btn btn-outline-success" for="gill_attachment-free">
+                    free
+                  </label>
+                  <input class="btn-check" type="radio" name="gill_attachments" id="gill_attachment-none" value="[0, 0, 0, 0, 1, 0, 0]">
+                  <label class="btn btn-outline-success" for="gill_attachment-none">
+                    none
+                  </label>
+                  <input class="btn-check" type="radio" name="gill_attachments" id="gill_attachment-pores" value="[0, 0, 0, 0, 0, 1, 0]">
+                  <label class="btn btn-outline-success" for="gill_attachment-pores">
+                    pores
+                  </label>
+                  <input class="btn-check" type="radio" name="gill_attachments" id="gill_attachment-sinuate" value="[0, 0, 0, 0, 0, 0, 1]">
+                  <label class="btn btn-outline-success" for="gill_attachment-sinuate">
+                    sinuate
+                  </label>
                 </div>
               </fieldset>
               <fieldset class="row mb-3">
                 <legend class="col-sm col-form-label col-form-label-lg">Gill Color</legend>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_colors" id="gill_color-black" value="[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="gill_color-black">
+                <div class="btn-group">
+                    <input class="btn-check" type="radio" name="gill_colors" id="gill_color-black" value="[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="gill_color-black">
                       black
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_colors" id="gill_color-brown" value="[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="gill_color-brown">
+                    <input class="btn-check" type="radio" name="gill_colors" id="gill_color-brown" value="[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="gill_color-brown">
                       brown
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_colors" id="gill_color-buff" value="[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="gill_color-buff">
+                    <input class="btn-check" type="radio" name="gill_colors" id="gill_color-buff" value="[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="gill_color-buff">
                       buff
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_colors" id="gill_color-gray" value="[0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="gill_color-gray">
+                    <input class="btn-check" type="radio" name="gill_colors" id="gill_color-gray" value="[0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="gill_color-gray">
                       gray
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_colors" id="gill_color-green" value="[0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="gill_color-green">
+                    <input class="btn-check" type="radio" name="gill_colors" id="gill_color-green" value="[0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="gill_color-green">
                       green
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_colors" id="gill_color-none" value="[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="gill_color-none">
+                    <input class="btn-check" type="radio" name="gill_colors" id="gill_color-none" value="[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="gill_color-none">
                       none
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_colors" id="gill_color-orange" value="[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="gill_color-orange">
+                    <input class="btn-check" type="radio" name="gill_colors" id="gill_color-orange" value="[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="gill_color-orange">
                       orange
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_colors" id="gill_color-pink" value="[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="gill_color-pink">
+                    <input class="btn-check" type="radio" name="gill_colors" id="gill_color-pink" value="[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="gill_color-pink">
                       pink
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_colors" id="gill_color-purple" value="[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]">
-                    <label class="form-check-label" for="gill_color-purple">
+                    <input class="btn-check" type="radio" name="gill_colors" id="gill_color-purple" value="[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="gill_color-purple">
                       purple
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_colors" id="gill_color-red" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]">
-                    <label class="form-check-label" for="gill_color-red">
+                    <input class="btn-check" type="radio" name="gill_colors" id="gill_color-red" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]">
+                    <label class="btn btn-outline-success" for="gill_color-red">
                       red
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_colors" id="gill_color-white" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]">
-                    <label class="form-check-label" for="gill_color-white">
+                    <input class="btn-check" type="radio" name="gill_colors" id="gill_color-white" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]">
+                    <label class="btn btn-outline-success" for="gill_color-white">
                       white
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_colors" id="gill_color-yellow" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]">
-                    <label class="form-check-label" for="gill_color-yellow">
+
+                    <input class="btn-check" type="radio" name="gill_colors" id="gill_color-yellow" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]">
+                    <label class="btn btn-outline-success" for="gill_color-yellow">
                       yellow
                     </label>
-                  </div>
                 </div>
               </fieldset>
               <fieldset class="row mb-3">
                 <legend class="col-sm col-form-label col-form-label-lg">Gill Spacing</legend>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_spacings" id="gill_spacing-close" value="[1, 0, 0]">
-                    <label class="form-check-label" for="gill_spacing-close">
+                  <div class="btn-group">
+                    <input class="btn-check" type="radio" name="gill_spacings" id="gill_spacing-close" value="[1, 0, 0]">
+                    <label class="btn btn-outline-success" for="gill_spacing-close">
                       close
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_spacings" id="gill_spacing-distant" value="[0, 1, 0]">
-                    <label class="form-check-label" for="gill_spacing-distant">
+                    <input class="btn-check" type="radio" name="gill_spacings" id="gill_spacing-distant" value="[0, 1, 0]">
+                    <label class="btn btn-outline-success" for="gill_spacing-distant">
                       distant
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gill_spacings" id="gill_spacing-none" value="[0, 0, 1]">
-                    <label class="form-check-label" for="gill_spacing-none">
+                    <input class="btn-check" type="radio" name="gill_spacings" id="gill_spacing-none" value="[0, 0, 1]">
+                    <label class="btn btn-outline-success" for="gill_spacing-none">
                       none
                     </label>
                   </div>
-                </div>
               </fieldset>
               <fieldset class="row mb-3">
                 <legend class="col-sm col-form-label col-form-label-lg">Habitat</legend>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="habitats" id="habitat-grasses" value="[1, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="habitat-grasses">
+                  <div class="btn-group">
+                    <input class="btn-check" type="radio" name="habitats" id="habitat-grasses" value="[1, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="habitat-grasses">
                       grasses
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="habitats" id="habitat-heaths" value="[0, 1, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="habitat-heaths">
+                    <input class="btn-check" type="radio" name="habitats" id="habitat-heaths" value="[0, 1, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="habitat-heaths">
                       heaths
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="habitats" id="habitat-leaves" value="[0, 0, 1, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="habitat-leaves">
+                    <input class="btn-check" type="radio" name="habitats" id="habitat-leaves" value="[0, 0, 1, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="habitat-leaves">
                       leaves
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="habitats" id="habitat-meadows" value="[0, 0, 0, 1, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="habitat-meadows">
+                    <input class="btn-check" type="radio" name="habitats" id="habitat-meadows" value="[0, 0, 0, 1, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="habitat-meadows">
                       meadows
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="habitats" id="habitat-paths" value="[0, 0, 0, 0, 1, 0, 0, 0]">
-                    <label class="form-check-label" for="habitat-paths">
+                    <input class="btn-check" type="radio" name="habitats" id="habitat-paths" value="[0, 0, 0, 0, 1, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="habitat-paths">
                       paths
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="habitats" id="habitat-urban" value="[0, 0, 0, 0, 0, 1, 0, 0]">
-                    <label class="form-check-label" for="habitat-urban">
+                    <input class="btn-check" type="radio" name="habitats" id="habitat-urban" value="[0, 0, 0, 0, 0, 1, 0, 0]">
+                    <label class="btn btn-outline-success" for="habitat-urban">
                       urban
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="habitats" id="habitat-waste" value="[0, 0, 0, 0, 0, 0, 1, 0]">
-                    <label class="form-check-label" for="habitat-waste">
+                    <input class="btn-check" type="radio" name="habitats" id="habitat-waste" value="[0, 0, 0, 0, 0, 0, 1, 0]">
+                    <label class="btn btn-outline-success" for="habitat-waste">
                       waste
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="habitats" id="habitat-woods" value="[0, 0, 0, 0, 0, 0, 0, 1]">
-                    <label class="form-check-label" for="habitat-woods">
+                    <input class="btn-check" type="radio" name="habitats" id="habitat-woods" value="[0, 0, 0, 0, 0, 0, 0, 1]">
+                    <label class="btn btn-outline-success" for="habitat-woods">
                       woods
                     </label>
-                  </div>
                 </div>
               </fieldset>
               <fieldset class="row mb-3">
                 <legend class="col-sm col-form-label col-form-label-lg">Does It Have a Ring?</legend>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="has_ring" id="has_ring-yes" value="[0,1]">
-                    <label class="form-check-label" for="has_ring-yes">
+                  <div class="btn-group">
+                    <input class="btn-check" type="radio" name="has_ring" id="has_ring-yes" value="[0,1]">
+                    <label class="btn btn-outline-success" for="has_ring-yes">
                       yes
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="has_ring" id="has_ring-no" value="[1,0]">
-                    <label class="form-check-label" for="has_ring-no">
+                    <input class="btn-check" type="radio" name="has_ring" id="has_ring-no" value="[1,0]">
+                    <label class="btn btn-outline-success" for="has_ring-no">
                       no
                     </label>
                   </div>
-                </div>
               </fieldset>
               <fieldset class="row mb-3">
                 <legend class="col-sm col-form-label col-form-label-lg">Ring Type</legend>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ring_types" id="ring_type-evanescent" value="[1, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="ring_type-evanescent">
+                  <div class="btn-group">
+                    <input class="btn-check" type="radio" name="ring_types" id="ring_type-evanescent" value="[1, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="ring_type-evanescent">
                       evanescent
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ring_types" id="ring_type-flaring" value="[0, 1, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="ring_type-flaring">
+                    <input class="btn-check" type="radio" name="ring_types" id="ring_type-flaring" value="[0, 1, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="ring_type-flaring">
                       flaring
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ring_types" id="ring_type-grooved" value="[0, 0, 1, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="ring_type-grooved">
+                    <input class="btn-check" type="radio" name="ring_types" id="ring_type-grooved" value="[0, 0, 1, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="ring_type-grooved">
                       grooved
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ring_types" id="ring_type-large" value="[0, 0, 0, 1, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="ring_type-large">
+                    <input class="btn-check" type="radio" name="ring_types" id="ring_type-large" value="[0, 0, 0, 1, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="ring_type-large">
                       large
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ring_types" id="ring_type-movable" value="[0, 0, 0, 0, 1, 0, 0, 0]">
-                    <label class="form-check-label" for="ring_type-movable">
+                    <input class="btn-check" type="radio" name="ring_types" id="ring_type-movable" value="[0, 0, 0, 0, 1, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="ring_type-movable">
                       movable
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ring_types" id="ring_type-none" value="[0, 0, 0, 0, 0, 1, 0, 0]">
-                    <label class="form-check-label" for="ring_type-none">
+                    <input class="btn-check" type="radio" name="ring_types" id="ring_type-none" value="[0, 0, 0, 0, 0, 1, 0, 0]">
+                    <label class="btn btn-outline-success" for="ring_type-none">
                       none
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ring_types" id="ring_type-pendant" value="[0, 0, 0, 0, 0, 0, 1, 0]">
-                    <label class="form-check-label" for="ring_type-pendant">
+                    <input class="btn-check" type="radio" name="ring_types" id="ring_type-pendant" value="[0, 0, 0, 0, 0, 0, 1, 0]">
+                    <label class="btn btn-outline-success" for="ring_type-pendant">
                       pendant
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ring_types" id="ring_type-zone" value="[0, 0, 0, 0, 0, 0, 0, 1]">
-                    <label class="form-check-label" for="ring_type-zone">
+                    <input class="btn-check" type="radio" name="ring_types" id="ring_type-zone" value="[0, 0, 0, 0, 0, 0, 0, 1]">
+                    <label class="btn btn-outline-success" for="ring_type-zone">
                       zone
                     </label>
                   </div>
-                </div>
               </fieldset>
               <fieldset class="row mb-3">
                 <legend class="col-sm col-form-label col-form-label-lg">Season</legend>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="seasons" id="season-autumn" value="[1, 0, 0, 0]">
-                    <label class="form-check-label" for="season-autumn">
+                  <div class="btn-group">
+                    <input class="btn-check" type="radio" name="seasons" id="season-autumn" value="[1, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="season-autumn">
                       autumn
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="seasons" id="season-spring" value="[0, 1, 0, 0]">
-                    <label class="form-check-label" for="season-spring">
+                    <input class="btn-check" type="radio" name="seasons" id="season-spring" value="[0, 1, 0, 0]">
+                    <label class="btn btn-outline-success" for="season-spring">
                       spring
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="seasons" id="season-summer" value="	[0, 0, 1, 0]">
-                    <label class="form-check-label" for="season-summer">
+                    <input class="btn-check" type="radio" name="seasons" id="season-summer" value="	[0, 0, 1, 0]">
+                    <label class="btn btn-outline-success" for="season-summer">
                       summer
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="seasons" id="season-winter" value="[0, 0, 0, 1]">
-                    <label class="form-check-label" for="season-winter">
+                    <input class="btn-check" type="radio" name="seasons" id="season-winter" value="[0, 0, 0, 1]">
+                    <label class="btn btn-outline-success" for="season-winter">
                       winter
                     </label>
                   </div>
-                </div>
-                
               </fieldset>
               <fieldset class="row mb-3">
                 <legend class="col-sm col-form-label col-form-label-lg">Stem Color</legend>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="stem_colors" id="stem_color-black" value="[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="stem_color-black">
+                  <div class="btn-group">
+                    <input class="btn-check" type="radio" name="stem_colors" id="stem_color-black" value="[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="stem_color-black">
                       black
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="stem_colors" id="stem_color-blue" value="[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="stem_color-blue">
+                    <input class="btn-check" type="radio" name="stem_colors" id="stem_color-blue" value="[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="stem_color-blue">
                       blue
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="stem_colors" id="stem_color-brown" value="[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="stem_color-brown">
+                    <input class="btn-check" type="radio" name="stem_colors" id="stem_color-brown" value="[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="stem_color-brown">
                       brown
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="stem_colors" id="stem_color-buff" value="[0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="stem_color-buff">
+                    <input class="btn-check" type="radio" name="stem_colors" id="stem_color-buff" value="[0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="stem_color-buff">
                       buff
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="stem_colors" id="stem_color-gray" value="[0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="stem_color-gray">
+                    <input class="btn-check" type="radio" name="stem_colors" id="stem_color-gray" value="[0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="stem_color-gray">
                       gray
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="stem_colors" id="stem_color-green" value="[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="stem_color-green">
+                    <input class="btn-check" type="radio" name="stem_colors" id="stem_color-green" value="[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="stem_color-green">
                       green
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="stem_colors" id="stem_color-none" value="[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="stem_color-none">
+                    <input class="btn-check" type="radio" name="stem_colors" id="stem_color-none" value="[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="stem_color-none">
                       none
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="stem_colors" id="stem_color-orange" value="[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="stem_color-orange">
+                    <input class="btn-check" type="radio" name="stem_colors" id="stem_color-orange" value="[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="stem_color-orange">
                       orange
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="stem_colors" id="stem_color-pink" value="[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]">
-                    <label class="form-check-label" for="stem_color-pink">
+                    <input class="btn-check" type="radio" name="stem_colors" id="stem_color-pink" value="[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="stem_color-pink">
                       pink
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="stem_colors" id="stem_color-purple" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]">
-                    <label class="form-check-label" for="cap_color-purple">
+                    <input class="btn-check" type="radio" name="stem_colors" id="stem_color-purple" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]">
+                    <label class="btn btn-outline-success" for="cap_color-purple">
                       purple
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="stem_colors" id="stem_color-red" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]">
-                    <label class="form-check-label" for="stem_color-red">
+                    <input class="btn-check" type="radio" name="stem_colors" id="stem_color-red" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]">
+                    <label class="btn btn-outline-success" for="stem_color-red">
                       red
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="stem_colors" id="stem_color-white" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]">
-                    <label class="form-check-label" for="stem_color-white">
+                    <input class="btn-check" type="radio" name="stem_colors" id="stem_color-white" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]">
+                    <label class="btn btn-outline-success" for="stem_color-white">
                       white
                     </label>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="stem_colors" id="stem_color-yellow" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]">
-                    <label class="form-check-label" for="stem_color-yellow">
+                    <input class="btn-check" type="radio" name="stem_colors" id="stem_color-yellow" value="[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]">
+                    <label class="btn btn-outline-success" for="stem_color-yellow">
                       yellow
                     </label>
                   </div>
-                </div>
               </fieldset>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
+
+            <br>
+            <br>
+            {{ prediction_text }}
 
             <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
           </div>
