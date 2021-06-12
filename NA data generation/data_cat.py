@@ -28,6 +28,10 @@ FILE_PATH_NA_PRIMARY = "north_american_primary_data_semicolons.csv"
 FILE_PATH_NA_SECONDARY_GENERATED = "north_american_secondary_data_generated.csv"
 FILE_PATH_NA_SECONDARY_SHUFFLED = "north_american_secondary_data_shuffled.csv"
 
+## EDIT: file paths for combined data set
+FILE_PATH_ALL_SECONDARY_GENERATED = "all_mushroom_data.csv"
+FILE_PATH_ALL_SECONDARY_SHUFFLED = "all_mushroom_data_shuffled.csv"
+
 ## dataset variables and possible values for primary dataset generation ##
 PRIMARY_DATASET_HEADER = """family;name;class;cap-diameter;cap-shape;cap-surface;cap-color;does-bruise-or-bleed;gill-attachment;gill-spacing;gill-color;stem-height;stem-width;stem-root;stem-surface;stem-color;veil-type;veil-color;has-ring;ring-type;spore-print-color;habitat;season"""
 DATASET_HEADER_MIN_MAX = """name;class;cap-diameter-min;cap-diameter-max;cap-shape;cap-surface;cap-color;does-bruis-or-bleed;gill-attachment;gill-spacing;gill-color;stem-height-min;stem-height-max;stem-width-min;stem-width-max;stem-root;stem-surface;stem-color;veil-type;veil-color;has-ring;ring-type;spore-color;habitat;season"""
