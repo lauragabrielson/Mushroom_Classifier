@@ -118,23 +118,24 @@
         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
           <div class="accordion-body">
 
-            <form>
+            <!-- Melissa is trying something with the input situation -->
+            <form action ="{{url_for('predict')}}"method= "post">
               <div class="row mb-3">
                 <label for="colFormLabelLg" class="col-sm col-form-label col-form-label-lg"> Cap Diameter (cm) </label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control form-control-lg" id="cap_diameter" placeholder="Enter a decimal between 0 and 62">
+                  <input type="text" class="form-control form-control-lg" id="cap_diameter" placeholder="Enter a decimal between 0 and 62">
                 </div>
               </div>
               <div class="row mb-3">
                 <label for="colFormLabelLg" class="col-sm col-form-label col-form-label-lg"> Stem Height (cm) </label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control form-control-lg" id="stem_height" placeholder="Enter a decimal between 0 and 36">
+                  <input type="text" class="form-control form-control-lg" id="stem_height" placeholder="Enter a decimal between 0 and 36">
                 </div>
               </div>
               <div class="row mb-3">
                 <label for="colFormLabelLg" class="col-sm col-form-label col-form-label-lg"> Stem Width (mm) </label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control form-control-lg" id="stem_width" placeholder="Enter a decimal between 0 and 100">
+                  <input type="text" class="form-control form-control-lg" id="stem_width" placeholder="Enter a decimal between 0 and 100">
                 </div>
               </div>
               <fieldset class="row mb-3">
@@ -888,6 +889,10 @@
               </fieldset>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
+
+            <br>
+            <br>
+            {{ prediction_text }}
 
             <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
           </div>
