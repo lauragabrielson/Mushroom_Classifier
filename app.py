@@ -33,6 +33,12 @@ def home():
 @app.route('/predict',methods=['POST'])
 def predict():
     
+    # Python code to convert string to list
+
+    def Convert(string):
+        li = list(string.split(","))
+        return li
+
     # Create a list of the output labels.
     prediction_labels = ['Edible', 'Poisonous']
     
@@ -44,6 +50,8 @@ def predict():
     
     # Read the value selected for cap surface
     cap_surface = request.form.getlist('cap_surfaces')
+    # Convert string to float
+    cap_surface = Convert('teststring') # THIS WORKED update the repo to have strings as the source value then proceed   
     # Extend feature with array from cap surface value
     features.extend(cap_surface)
 
