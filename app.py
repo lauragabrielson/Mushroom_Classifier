@@ -103,56 +103,110 @@ def predict():
         bruise_bleed[i] = int(bruise_bleed[i])
         qualitative.append(bruise_bleed[i])
 
+    # Read the value selected for gill attachments
+    gill_attachment = request.form.get('gill_attachments')
+    
+    # Convert string post into list
+    gill_attachment = gill_attachment.split(",")
+
+    # Convert list string data types into integers
+    for i in range(0, len(gill_attachment)):
+        gill_attachment[i] = int(gill_attachment[i])
+        qualitative.append(gill_attachment[i])
+
+    # Read the value selected for gill spacing
+    gill_spacing = request.form.get('gill_spacings')
+
+    # Convert string post into list
+    gill_spacing = gill_spacing.split(",")
+
+    # Convert list string data types into integers
+    for i in range(0, len(gill_spacing)):
+        gill_spacing[i] = int(gill_spacing[i])
+        qualitative.append(gill_spacing[i])
+
+    # Read the value selected for gill color
+    gill_color = request.form.get('gill_colors')
+    
+    # Convert string post into list
+    gill_color = gill_color.split(",")
+
+    # Convert list string data types into integers
+    for i in range(0, len(gill_color)):
+        gill_color[i] = int(gill_color[i])
+        qualitative.append(gill_color[i])
+
+    # Read the value selected for cap shape
+    cap_shape = request.form.get('cap_shapes')
+    
+    # Convert string post into list
+    cap_shape = cap_shape.split(",")
+
+    # Convert list string data types into integers
+    for i in range(0, len(cap_shape)):
+        cap_shape[i] = int(cap_shape[i])
+        qualitative.append(cap_shape[i])    
+
+    # Read the value selected for stem color
+    stem_color = request.form.get('stem_colors')
+    
+    # Convert string post into list
+    stem_color = stem_color.split(",")
+
+    # Convert list string data types into integers
+    for i in range(0, len(stem_color)):
+        stem_color[i] = int(stem_color[i])
+        qualitative.append(stem_color[i])
+
+    # Read the value selected for has_ring
+    has_ring = request.form.get('has_ring')
+    
+    # Convert string post into list
+    has_ring = has_ring.split(",")
+
+    # Convert list string data types into integers
+    for i in range(0, len(has_ring)):
+        has_ring[i] = int(has_ring[i])
+        qualitative.append(has_ring[i])
+
+    # Read the value selected for ring_type
+    ring_type = request.form.get('ring_types')
+    
+    # Convert string post into list
+    ring_type = ring_type.split(",")
+
+    # Convert list string data types into integers
+    for i in range(0, len(ring_type)):
+        ring_type[i] = int(ring_type[i])
+        qualitative.append(ring_type[i])
+
+    # Read the value selected for habitat
+    habitat = request.form.get('habitats')
+    
+    # Convert string post into list
+    habitat = habitat.split(",")
+
+    # Convert list string data types into integers
+    for i in range(0, len(habitat)):
+        habitat[i] = int(habitat[i])
+        qualitative.append(habitat[i])
+
+    # Read the value selected for seasons
+    season = request.form.get('seasons')
+    
+    # Convert string post into list
+    season = season.split(",")
+
+    # Convert list string data types into integers
+    for i in range(0, len(season)):
+        season[i] = int(season[i])
+        qualitative.append(season[i])
+
     # THIS SHOULD ONLY HAPPEN AT THE END OF ALL QUALITATIVE COLLECTION 
     # MOVE THIS AS YOU WORK THROUGH ALL FIELDS
     # OTHERWISE IT WILL DUPLICATE AND TRIPLICATE AND HORRIFICALLY MANGLE EVERYTHING
     for i in qualitative:
         all_input.append(i)
-
-    #  # Read the value selected for gill attachments
-    # gill_attachment = request.form.getlist('gill_attachments')
-    # # Extend feature with array from cap color value
-    # features.extend(gill_attachment)
-
-    #  # Read the value selected for gill spacing
-    # gill_spacing = request.form.getlist('gill_spacing')
-    # # Extend feature with array from gill spacing value
-    # features.extend(gill_spacing)
-
-    #  # Read the value selected for gill color
-    # gill_color = request.form.getlist('gill_colors')
-    # # Extend feature with array from gill color value
-    # features.extend(gill_color)
-
-    #  # Read the value selected for cap shape
-    # cap_shape = request.form.getlist('cap_shapes')
-    # # Extend feature with array from cap shape value
-    # features.extend(cap_shape)
-
-    #  # Read the value selected for stem color
-    # stem_color = request.form.getlist('stem_colors')
-    # # Extend feature with array from stem color value
-    # features.extend(stem_color)
-
-    #  # Read the value selected for has_ring
-    # has_ring = request.form.getlist('has_ring')
-    # # Extend feature with array from has_ringvalue
-    # features.extend(has_ring)
-
-    #  # Read the value selected for ring_type
-    # ring_type = request.form.getlist('ring_types')
-    # # Extend feature with array from ring type value
-    # features.extend(ring_type)
-
-    #  # Read the value selected for habitat
-    # habitat = request.form.getlist('habitats')
-    # # Extend feature with array from habitat value
-    # features.extend(habitat)
-
-    # # Read the value selected for seasons
-    # season = request.form.getlist('seasons')
-    # # Extend feature with array from season value
-    # features.extend(season)
 
     # # Convert each value to a float.
     # float_features = [float(x) for x in features]
