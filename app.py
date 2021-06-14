@@ -70,32 +70,44 @@ def predict():
     # features.extend(cap_surface)
 
 
-     # Read the value selected for cap surface
+    # Read the value selected for cap surface
     cap_surface = request.form.get('cap_surfaces')
     
     # Convert string post into list
     cap_surface = cap_surface.split(",")
 
-    # convert list string data types into integers
+    # Convert list string data types into integers
     for i in range(0, len(cap_surface)):
         cap_surface[i] = int(cap_surface[i])
         qualitative.append(cap_surface[i])
+
+    # Read the value selected for cap color
+    cap_color = request.form.get('cap_colors')
+    
+    # Convert string post into list
+    cap_color = cap_color.split(",")
+
+    # Convert list string data types into integers
+    for i in range(0, len(cap_color)):
+        cap_color[i] = int(cap_color[i])
+        qualitative.append(cap_color[i])
+
+     # Read the value selected for bruises_bleed
+    bruise_bleed = request.form.get('bruise_bleed')
+   
+    # Convert string post into list
+    bruise_bleed = bruise_bleed.split(",")
+
+    # Convert list string data types into integers
+    for i in range(0, len(bruise_bleed)):
+        bruise_bleed[i] = int(bruise_bleed[i])
+        qualitative.append(bruise_bleed[i])
 
     # THIS SHOULD ONLY HAPPEN AT THE END OF ALL QUALITATIVE COLLECTION 
     # MOVE THIS AS YOU WORK THROUGH ALL FIELDS
     # OTHERWISE IT WILL DUPLICATE AND TRIPLICATE AND HORRIFICALLY MANGLE EVERYTHING
     for i in qualitative:
         all_input.append(i)
-
-    # # Read the value selected for cap color
-    # cap_color = request.form.getlist('cap_colors')
-    # # Extend feature with array from cap color value
-    # features.extend(cap_color)
-
-    #  # Read the value selected for bruises_bleed
-    # bruise_bleed = request.form.getlist('bruise_bleed')
-    # # Extend feature with array from bruise_bleed value
-    # features.extend(bruise_bleed)
 
     #  # Read the value selected for gill attachments
     # gill_attachment = request.form.getlist('gill_attachments')
