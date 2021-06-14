@@ -4,8 +4,8 @@ from flask import Flask, request, jsonify, render_template
 import joblib
 from pickle import load
 from tensorflow.keras.models import load_model
-from sklearn.preprocessing import LabelEncoder, MinMaxScaler
-from tensorflow.keras.utils import to_categorical
+# from sklearn.preprocessing import LabelEncoder, MinMaxScaler
+# from tensorflow.keras.utils import to_categorical
 
 
 # Initialize the flask App
@@ -15,14 +15,15 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 # Load the model from its pickle file. (This pickle 
 # file was originally saved by the code that trained 
 # the model. See mlmodel.py)
-# mushroom_model = joblib.load('knn_standard_three.pkl')
-from tensorflow.keras.models import load_model
-mushroom_model = load_model("app_mushroom_trained.h5")
+mushroom_model = joblib.load('combined_data_rf_model.pkl')
+# from tensorflow.keras.models import load_model
+# mushroom_model = load_model("app_mushroom_trained.h5")
 
 # # Load the scaler from its pickle file. (This pickle
 # # file was originally saved by the code that trained 
 # # the model. See mlmodel.py)
-mushroom_scaler = load(open('mush_nn_scale.pkl','rb'))
+# mushroom_scaler = load(open('mush_nn_scale.pkl','rb'))
+mushroom_scaler = load(open('combined_data_scaler.pkl','rb'))
 
 # Define the index route
 @app.route('/')
@@ -228,12 +229,12 @@ def predict():
     # # Let's try the scaler in a different way
     # final_scaled = mushroom_scaler.transform(all_input)
 
-    # # Use the scaled values to make the prediction. 
-    # prediction_encoded = mushroom_model.predict(final_input_scaled)
-    # prediction = prediction_labels.values
+    # Use the scaled values to make the prediction. 
+    prediction_encoded = mushroom_model.predict(final_input_scaled)
+    prediction = prediction_labels[prediction_encoded[0]]
 
     # Render a template that shows the result.
-    prediction_text = f'Mushroom is predicted to be :  {final_input}'
+    prediction_text = f'Mushroom is predicted to be :  {prediction}'
     return render_template('index.html', prediction_text=prediction_text)
 
 
