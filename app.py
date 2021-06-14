@@ -4,6 +4,8 @@ from flask import Flask, request, jsonify, render_template
 import joblib
 from pickle import load
 from tensorflow.keras.models import load_model
+from sklearn.preprocessing import LabelEncoder, MinMaxScaler
+from tensorflow.keras.utils import to_categorical
 
 
 # Initialize the flask App
@@ -208,26 +210,30 @@ def predict():
     for i in qualitative:
         all_input.append(i)
 
-    # # Convert each value to a float.
-    # float_features = [float(x) for x in features]
+    # Convert each value to a float.
+    float_input = [float(x) for x in all_input]
 
-    # # Put the list of floats into another list, to make scikit-learn happy. 
-    # # (This is how scikit-learn wants the data formatted. We touched on this
-    # # in class.)
-    # final_features = [np.array(float_features)]
+    # Put the list of floats into another list, to make scikit-learn happy. 
+    # (This is how scikit-learn wants the data formatted. We touched on this
+    # in class.)
+    final_input = [np.array(float_input)]
      
-    # # Preprocess the input using the ORIGINAL (unpickled) scaler.
-    # # This scaler was fit to the TRAINING set when we trained the 
-    # # model, and we must use that same scaler for our prediction 
-    # # or we won't get accurate results. 
-    # final_features_scaled = mushroom_scaler.transform(final_features)
+    # Preprocess the input using the ORIGINAL (unpickled) scaler.
+    # Look into this note
+    # This scaler was fit to the TRAINING set when we trained the 
+    # model, and we must use that same scaler for our prediction 
+    # or we won't get accurate results. 
+    final_input_scaled = mushroom_scaler.transform(final_input)
+
+    # # Let's try the scaler in a different way
+    # final_scaled = mushroom_scaler.transform(all_input)
 
     # # Use the scaled values to make the prediction. 
-    # prediction_encoded = mushroom_model.predict(final_features_scaled)
-    # # prediction = prediction_labels.values
+    # prediction_encoded = mushroom_model.predict(final_input_scaled)
+    # prediction = prediction_labels.values
 
     # Render a template that shows the result.
-    prediction_text = f'Mushroom is predicted to be :  {all_input}'
+    prediction_text = f'Mushroom is predicted to be :  {final_input}'
     return render_template('index.html', prediction_text=prediction_text)
 
 
