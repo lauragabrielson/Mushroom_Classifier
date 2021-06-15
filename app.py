@@ -95,7 +95,7 @@ def predict():
         cap_color[i] = int(cap_color[i])
         qualitative.append(cap_color[i])
 
-     # Read the value selected for bruises_bleed
+    # Read the value selected for bruises_bleed
     bruise_bleed = request.form.get('bruise_bleed')
    
     # Convert string post into list
