@@ -79,12 +79,13 @@ function updateBar(ClickedData) {
     // and create the bottom and left axes inside of them
     chartGroup.append("g")
       .style('font-size', "12px")
-      // .class("axis-tick-markers")
+      .style("font-family", "Raleway")
       .call(leftAxis);
 
     chartGroup.append("g")
       .attr("transform", `translate(0, ${chartHeight})`)
       .style("font-size", "14px")
+      .style("font-family", "Raleway")
       .call(bottomAxis);
 
     // Create one SVG rectangle per piece of mushData

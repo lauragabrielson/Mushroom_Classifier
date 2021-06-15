@@ -1,3 +1,4 @@
+/* FONTS */
 @font-face {
   font-family: "aniron";
   src: url("fonts/webfontkit-aniron/anirb___-webfont.woff");
@@ -5,6 +6,13 @@
   /* url("CustomFont.otf") format("opentype"),
   url("CustomFont.svg#filename") format("svg"); */
   }
+
+
+/* GENERAL */
+body {
+  font-family: Raleway;
+  background-color: #FFF1E0;
+}
 
 h1 {
   font-family: 'aniron', Arial, sans-serif;
@@ -20,15 +28,11 @@ h2 {
 }
 
 h3 {
-  color: #FFE49A;
+  color: #534653;
 }
 
-body {
-  background-color: #FFF1E0;
-}
-
-.accordion-item {
-  background-color: #FFF1E0;
+h4 {
+  color: #534653;
 }
 
 .container {
@@ -37,11 +41,33 @@ body {
   padding: 0px;
 }
 
+
+/* ACCORDION */
+.accordion-item {
+  background-color: #FFF1E0;
+}
+
+.accordion-body {
+  background-color: #FFF1E0;
+}
+
 .card-body {
   background-color: #fffff0;
   padding: 20px;
 }
 
+.header-group {
+  display: inline-block;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ef4e2a;
+  background-color: #FFE49A;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+
+/* BUTTONS */
 .my-button {
   font-family: 'aniron', Arial, sans-serif;
   background-color: #FFE49A;
@@ -53,17 +79,6 @@ body {
   color: #ef4e2a;
 }
 
-.accordion-body {
-  background-color: #FFF1E0;
-}
-
-.visual {
-  background-color: #FFF1E0;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px #888888;
-  vertical-align: middle;
-}
-
 .button-group {
   background-color: ivory;
   margin-left: 20px;
@@ -71,31 +86,41 @@ body {
   margin-bottom: 5px;
 }
 
-.header-group {
-  display: inline-block;
+.custom-button {
+  width: 92px;
+}
+
+#cap_color-black.hover {
+  background-color: black;
+}
+
+/* VISUALS */
+.visual {
+  background-color: #FFF1E0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #888888;
+  vertical-align: middle;
 }
 
 .axis-labels {
   font-size: 14px;
   text-anchor: middle;
+  font-family: Raleway;
 }
 
 .axisTitle {
   font-size: 16px;
   text-anchor: middle;
+  font-family: Raleway;
 }
 
 .btn {
-   border-radius: 5px 5px 5px 5px;
+   border-radius: 0px 0px 0px 0px;
+   background-color: #FFF1E0;
   }
 
-.accordion-button:not(.collapsed) {
-  color: #ef4e2a;
-  background-color: #FFE49A;
-  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
-}
 
-/* Style the form */
+/* FORM */
 #predictForm {
   background-color: #ffffff;
   margin: 20px auto;
@@ -104,11 +129,9 @@ body {
 }
 
 .form-inputs {
-  height: 450px;
-  width: fit-content;
+  min-height: 475px;
 }
 
-/* Style the input fields */
 input {
   padding: 10px;
   width: 350px;
@@ -118,7 +141,6 @@ input {
   border-radius: 5px;
 }
 
-/* Mark input boxes that gets an error on validation: */
 input.invalid {
   background-color: #ffdddd;
 }
@@ -128,24 +150,51 @@ input.invalid {
   display: none;
 }
 
-/* Make circles that indicate the steps of the form: */
 .step {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbbbbb;
+  background-color: #198754;
   border: none;
   border-radius: 50%;
   display: inline-block;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
-/* Mark the active step: */
 .step.active {
   opacity: 1;
 }
 
-/* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: #04AA6D;
+  background-color: #53df9e;
+}
+
+#prevBtn {
+    color: #ffffff;
+    background-color: #9c9c9c;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#nextBtn {
+  background-color: #62C370;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#cap_color-black.hover {
+  background-color: black;
 }

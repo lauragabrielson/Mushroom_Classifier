@@ -1,5 +1,7 @@
 console.log("form.js loaded");
 
+// found this code one w3 schools. Works great.
+
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
@@ -61,10 +63,6 @@ function validateForm() {
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
-
-  console.log(x);
-  console.log(y);
-  console.log(i);
 
   return valid; // return the valid status
 }
