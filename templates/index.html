@@ -128,11 +128,12 @@
                 <div class="tab">
                   <div class="row"><h3>Cap</h3></div>
                   <label for="colFormLabelLg" class="col-sm col-form-label-lg col-form-label"> Diameter (cm) </label>
-                  <p><input type="text" class="col-sm-6" name="cap_diameter" id="cap_diameter" placeholder="Enter a decimal between 0 and 62" required="required"></p>
 
+                  <p><input type="text" class="col-sm-6" name="cap_diameter" id="cap_diameter" placeholder="Enter a decimal between 0 and 62" required="required"></p>
+                  
                   <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Color</legend>
-                    <div class="btn-group form-button">
+                    <div class="btn-group button-group">
                         <input class="btn-check" type="radio" name="cap_colors" id="cap_color-black" value="1,0,0,0,0,0,0,0,0,0,0,0" required="required">
                         <label class="btn btn-outline-success" for="cap_color-black">
                           black
@@ -185,7 +186,7 @@
                   </fieldset>
                   <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Shape</legend>
-                    <div class="btn-group form-button">
+                    <div class="btn-group button-group">
                       <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-bell" value="1,0,0,0,0,0,0" required="required">
                       <label class="btn btn-outline-success" for="cap_shape-bell">
                         bell
@@ -218,7 +219,7 @@
                   </fieldset>
                   <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Surface</legend>
-                    <div class="btn-group form-button">
+                    <div class="btn-group button-group">
                       <input class="btn-check" type="radio" name="cap_surfaces" id="cap_surface-dry" value="1,0,0,0,0,0,0,0,0,0,0" required="required">
                       <label class="btn btn-outline-success" for="cap_surface-dry">
                         dry
@@ -376,14 +377,12 @@
                 </div>
 
                 <!-- stem section -->
-
                 <div class="tab"><center><h3>Stem</h3></center>
                   <label for="colFormLabelLg" class="col-sm col-form-label-lg col-form-label">  Stem Height (cm) </label>
-                  <p><input type="text" class="col-sm-3" name="stem_height" id="stem_height" placeholder="Enter a decimal between 0 and 36" required="required"></p>
+                  <p><input type="text" class="col-sm-3" id="stem_height" placeholder="Enter a decimal between 0 and 36" required="required"></p>
 
                   <label for="colFormLabelLg" class="col-sm col-form-label-lg col-form-label"> Stem Width (mm) </label>
-                  <p><input type="text" class="col-sm-3" name="stem_width" id="stem_width" id="stem_width" placeholder="Enter a decimal between 0 and 100" required="required"></p>
-
+                  <p><input type="text" class="col-sm-3" id="stem_width" id="stem_width" placeholder="Enter a decimal between 0 and 100" required="required"></p>
                   <fieldset class="row">
                     <legend class="col-sm col-form-label col-form-label-lg">Stem Color</legend>
                       <div class="btn-group form-button">
@@ -445,7 +444,7 @@
 
                 <!-- ring section -->
                 <div class="tab"><center><h3>Ring</h3></center>
-                  <fieldset class="row">
+                  <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Does It Have a Ring?</legend>
                       <div class="btn-group form-button">
                         <input class="btn-check" type="radio" name="has_ring" id="has_ring-yes" value="0,1" required="required">
@@ -458,7 +457,7 @@
                         </label>
                       </div>
                   </fieldset>
-                  <fieldset class="row">
+                  <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Ring Type</legend>
                       <div class="btn-group form-button">
                         <input class="btn-check" type="radio" name="ring_types" id="ring_type-evanescent" value="1,0,0,0,0,0,0,0" required="required">
@@ -499,7 +498,7 @@
 
                 <!-- other section -->
                 <div class="tab"><center><h3>Other</h3></center>
-                  <fieldset class="row">
+                  <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Does It Bruise or Bleed?</legend>
                     <div class="btn-group form-button">
                       <input class="btn-check" type="radio" name="bruise_bleed" id="bruise_bleed-yes" value="0,1" required="required">
@@ -512,7 +511,7 @@
                       </label>
                     </div>
                   </fieldset>
-                  <fieldset class="row">
+                  <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Habitat</legend>
                       <div class="btn-group form-button">
                         <input class="btn-check" type="radio" name="habitats" id="habitat-grasses" value="1,0,0,0,0,0,0,0" required="required">
@@ -549,7 +548,7 @@
                         </label>
                     </div>
                   </fieldset>
-                  <fieldset class="row">
+                  <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Season</legend>
                       <div class="btn-group form-button">
                         <input class="btn-check" type="radio" name="seasons" id="season-autumn" value="1,0,0,0" required="required">
@@ -592,8 +591,6 @@
             <br>
             <br>
             {{ prediction_text }}
-
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
           </div>
         </div>
       </div>
