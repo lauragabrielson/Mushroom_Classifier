@@ -7,7 +7,7 @@
       background-image: url('../static/images/wallpaper2.png');
     }
   </style>
-  <link rel='icon' href='../static/images/favicon.ico' type='image/x-icon'/ >
+  <link rel='icon' href='../static/images/favicon.ico' type='image/x-icon' >
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -28,7 +28,7 @@
         </div>
         <div class="header-group" style="vertical-align: middle;">
           <center><h1>A Shortcut to Mushrooms</h1></center>
-          <center><h3><i>All fungi are edible. Some fungi are only edible once.</br>-Terry Pratchett</i></h3></center>
+          <center><h2><i>All fungi are edible. Some fungi are only edible once.</br>-Terry Pratchett</i></h2></center>
         </div>
         <div class="header-group">
           <img src="../static/images/mushroom1.png" style="margin-left: 50px; vertical-align: middle;">
@@ -48,12 +48,13 @@
         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
           <div class="accordion-body">
             <div class="accordion-body">
-              Here is where we will explain what this website is and does. A few ideas for what can go here:
+              <p>Here is where we will explain what this website is and does. A few ideas for what can go here:
                 <ul>
                   <li>Relevant links</li>
                   <li>Lay out issues we came across</li>
                   <li>methods used to transform data</li>
                 </ul>
+              </p>
             </div>
           </div>
         </div>
@@ -118,22 +119,22 @@
         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
           <div class="accordion-body">
 
-            <form class="needs-validation" id="predictForm" action="{{url_for('predict')}}" method="post" novalidate>
+            <form class="needs-validation col-lg-12" id="predictForm" action="{{url_for('predict')}}" method="post" novalidate>
               <div class="row"><center><h2>Let's have a look at your mushroom.</h2></center></div>
               <br>
 
-              <div class="form-inputs">
+              <div class="form-inputs col-lg-9">
                 <!-- cap section -->
 
                 <div class="tab">
-                  <div class="row"><h3>Cap</h3></div>
+                  <div class="row"><center><h3>Cap</h3></center></div>
+                  
                   <label for="colFormLabelLg" class="col-sm col-form-label-lg col-form-label"> Diameter (cm) </label>
-
-                  <p><input type="text" class="col-sm-6" name="cap_diameter" id="cap_diameter" placeholder="Enter a decimal between 0 and 62" required="required"></p>
+                  <p><input type="text" class="col-lg-5" name="cap_diameter" id="cap_diameter" placeholder="Enter a decimal between 0 and 62" required="required"></p>
                   
                   <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Color</legend>
-                    <div class="btn-group button-group">
+                    <div class="btn-group flex-wrap">
                         <input class="btn-check" type="radio" name="cap_colors" id="cap_color-black" value="1,0,0,0,0,0,0,0,0,0,0,0" required="required">
                         <label class="btn btn-outline-success" for="cap_color-black">
                           black
@@ -186,40 +187,46 @@
                   </fieldset>
                   <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Shape</legend>
-                    <div class="btn-group button-group">
+                    <div class="btn-group flex-wrap">
                       <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-bell" value="1,0,0,0,0,0,0" required="required">
-                      <label class="btn btn-outline-success" for="cap_shape-bell">
+                      <label class="btn btn-outline-success custom-button" for="cap_shape-bell">
+                        <img src="../static/images/bell.svg">
                         bell
                       </label>
                       <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-conical" value="0,1,0,0,0,0,0" required="required">
-                      <label class="btn btn-outline-success" for="cap_shape-conical">
+                      <label class="btn btn-outline-success custom-button" for="cap_shape-conical">
+                        <img src="../static/images/conical.svg">
                         conical
                       </label>
                       <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-convex" value="0,0,1,0,0,0,0" required="required">
-                      <label class="btn btn-outline-success" for="cap_shape-convex">
+                      <label class="btn btn-outline-success custom-button" for="cap_shape-convex">
+                        <img src="../static/images/convex.svg">
                         convex
                       </label>
                       <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-flat" value="0,0,0,1,0,0,0" required="required">
-                      <label class="btn btn-outline-success" for="cap_shape-flat">
+                      <label class="btn btn-outline-success custom-button" for="cap_shape-flat">
+                        <img src="../static/images/flat.svg">
                         flat
                       </label>
-                      <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-others" value="0,0,0,0,1,0,0" required="required">
-                      <label class="btn btn-outline-success" for="cap_shape-others">
-                        others
-                      </label>
                       <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-spherical" value="0,0,0,0,0,1,0" required="required">
-                      <label class="btn btn-outline-success" for="cap_shape-spherical">
+                      <label class="btn btn-outline-success custom-button" for="cap_shape-spherical">
+                        <img src="../static/images/spherical.svg">
                         spherical
                       </label>
                       <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-sunken" value="0,0,0,0,0,0,1" required="required">
-                      <label class="btn btn-outline-success" for="cap_shape-sunken">
+                      <label class="btn btn-outline-success custom-button" for="cap_shape-sunken">
+                        <img src="../static/images/sunken.svg">
                         sunken
+                      </label>
+                      <input class="btn-check" type="radio" name="cap_shapes" id="cap_shape-others" value="0,0,0,0,1,0,0" required="required">
+                      <label class="btn btn-outline-success custom-button" for="cap_shape-others">
+                        others
                       </label>
                     </div>
                   </fieldset>
                   <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Surface</legend>
-                    <div class="btn-group button-group">
+                    <div class="btn-group flex-wrap">
                       <input class="btn-check" type="radio" name="cap_surfaces" id="cap_surface-dry" value="1,0,0,0,0,0,0,0,0,0,0" required="required">
                       <label class="btn btn-outline-success" for="cap_surface-dry">
                         dry
@@ -266,46 +273,52 @@
                       </label>
                     </div>
                   </fieldset>
+
                 </div>
                 
                 <!-- gill section -->
                 <div class="tab"><center><h3>Gill</h3></center>
                   <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Gill Attachment</legend>
-                    <div class="btn-group form-button">
+                    <div class="btn-group flex-wrap">
                       <input class="btn-check" type="radio" name="gill_attachments" id="gill_attachment-adnate" value="1,0,0,0,0,0,0" required="required">
-                      <label class="btn btn-outline-success" for="gill_attachment-adnate">
+                      <label class="btn btn-outline-success custom-button" for="gill_attachment-adnate">
+                        <img src="../static/images/adnate.svg">
                         adnate
                       </label>
                       <input class="btn-check" type="radio" name="gill_attachments" id="gill_attachment-adnexed" value="0,1,0,0,0,0,0" required="required">
-                      <label class="btn btn-outline-success" for="gill_attachment-adnexed">
+                      <label class="btn btn-outline-success custom-button" for="gill_attachment-adnexed">
+                        <img src="../static/images/adnexed.svg">
                         adnexed
                       </label>
                       <input class="btn-check" type="radio" name="gill_attachments" id="gill_attachment-decurrent" value="0,0,1,0,0,0,0" required="required">
-                      <label class="btn btn-outline-success" for="gill_attachment-decurrent">
+                      <label class="btn btn-outline-success custom-button" for="gill_attachment-decurrent">
+                        <img src="../static/images/decurrent.svg">
                         decurrent
                       </label>
                       <input class="btn-check" type="radio" name="gill_attachments" id="gill_attachment-free" value="0,0,0,1,0,0,0" required="required">
-                      <label class="btn btn-outline-success" for="gill_attachment-free">
+                      <label class="btn btn-outline-success custom-button" for="gill_attachment-free">
+                        <img src="../static/images/free.svg">
                         free
                       </label>
-                      <input class="btn-check" type="radio" name="gill_attachments" id="gill_attachment-none" value="0,0,0,0,1,0,0" required="required">
-                      <label class="btn btn-outline-success" for="gill_attachment-none">
-                        none
-                      </label>
                       <input class="btn-check" type="radio" name="gill_attachments" id="gill_attachment-pores" value="0,0,0,0,0,1,0" required="required">
-                      <label class="btn btn-outline-success" for="gill_attachment-pores">
+                      <label class="btn btn-outline-success custom-button" for="gill_attachment-pores">
                         pores
                       </label>
                       <input class="btn-check" type="radio" name="gill_attachments" id="gill_attachment-sinuate" value="0,0,0,0,0,0,1" required="required">
-                      <label class="btn btn-outline-success" for="gill_attachment-sinuate">
+                      <label class="btn btn-outline-success custom-button" for="gill_attachment-sinuate">
+                        <img src="../static/images/sinuate.svg">
                         sinuate
+                      </label>
+                      <input class="btn-check" type="radio" name="gill_attachments" id="gill_attachment-none" value="0,0,0,0,1,0,0" required="required">
+                      <label class="btn btn-outline-success custom-button" for="gill_attachment-none">
+                        none
                       </label>
                     </div>
                   </fieldset>
                   <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Gill Color</legend>
-                    <div class="btn-group form-button">
+                    <div class="btn-group flex-wrap">
                         <input class="btn-check" type="radio" name="gill_colors" id="gill_color-black" value="1,0,0,0,0,0,0,0,0,0,0,0" required="required">
                         <label class="btn btn-outline-success" for="gill_color-black">
                           black
@@ -359,7 +372,7 @@
                   </fieldset>
                   <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Gill Spacing</legend>
-                      <div class="btn-group form-button">
+                      <div class="btn-group flex-wrap">
                         <input class="btn-check" type="radio" name="gill_spacings" id="gill_spacing-close" value="1,0,0" required="required">
                         <label class="btn btn-outline-success" for="gill_spacing-close">
                           close
@@ -379,13 +392,13 @@
                 <!-- stem section -->
                 <div class="tab"><center><h3>Stem</h3></center>
                   <label for="colFormLabelLg" class="col-sm col-form-label-lg col-form-label">  Stem Height (cm) </label>
-                  <p><input type="text" class="col-sm-3" id="stem_height" placeholder="Enter a decimal between 0 and 36" required="required"></p>
+                  <p><input type="text" class="col-lg-5" id="stem_height" placeholder="Enter a decimal between 0 and 36" required="required"></p>
 
                   <label for="colFormLabelLg" class="col-sm col-form-label-lg col-form-label"> Stem Width (mm) </label>
-                  <p><input type="text" class="col-sm-3" id="stem_width" id="stem_width" placeholder="Enter a decimal between 0 and 100" required="required"></p>
+                  <p><input type="text" class="col-lg-5" id="stem_width" id="stem_width" placeholder="Enter a decimal between 0 and 100" required="required"></p>
                   <fieldset class="row">
                     <legend class="col-sm col-form-label col-form-label-lg">Stem Color</legend>
-                      <div class="btn-group form-button">
+                      <div class="btn-group flex-wrap">
                         <input class="btn-check" type="radio" name="stem_colors" id="stem_color-black" value="1,0,0,0,0,0,0,0,0,0,0,0,0" required="required">
                         <label class="btn btn-outline-success" for="stem_color-black">
                           black
@@ -446,7 +459,7 @@
                 <div class="tab"><center><h3>Ring</h3></center>
                   <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Does It Have a Ring?</legend>
-                      <div class="btn-group form-button">
+                      <div class="btn-group flex-wrap">
                         <input class="btn-check" type="radio" name="has_ring" id="has_ring-yes" value="0,1" required="required">
                         <label class="btn btn-outline-success" for="has_ring-yes">
                           yes
@@ -459,38 +472,40 @@
                   </fieldset>
                   <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Ring Type</legend>
-                      <div class="btn-group form-button">
+                      <div class="btn-group flex-wrap">
                         <input class="btn-check" type="radio" name="ring_types" id="ring_type-evanescent" value="1,0,0,0,0,0,0,0" required="required">
                         <label class="btn btn-outline-success" for="ring_type-evanescent">
                           evanescent
                         </label>
                         <input class="btn-check" type="radio" name="ring_types" id="ring_type-flaring" value="0,1,0,0,0,0,0,0" required="required">
-                        <label class="btn btn-outline-success" for="ring_type-flaring">
+                        <label class="btn btn-outline-success custom-button" for="ring_type-flaring">
+                          <img src="../static/images/flaring.svg">
                           flaring
                         </label>
                         <input class="btn-check" type="radio" name="ring_types" id="ring_type-grooved" value="0,0,1,0,0,0,0,0" required="required">
-                        <label class="btn btn-outline-success" for="ring_type-grooved">
+                        <label class="btn btn-outline-success custom-button" for="ring_type-grooved">
                           grooved
                         </label>
                         <input class="btn-check" type="radio" name="ring_types" id="ring_type-large" value="0,0,0,1,0,0,0,0" required="required">
-                        <label class="btn btn-outline-success" for="ring_type-large">
+                        <label class="btn btn-outline-success custom-button" for="ring_type-large">
                           large
                         </label>
                         <input class="btn-check" type="radio" name="ring_types" id="ring_type-movable" value="0,0,0,0,1,0,0,0" required="required">
-                        <label class="btn btn-outline-success" for="ring_type-movable">
+                        <label class="btn btn-outline-success custom-button" for="ring_type-movable">
                           movable
                         </label>
-                        <input class="btn-check" type="radio" name="ring_types" id="ring_type-none" value="0,0,0,0,0,1,0,0" required="required">
-                        <label class="btn btn-outline-success" for="ring_type-none">
-                          none
-                        </label>
                         <input class="btn-check" type="radio" name="ring_types" id="ring_type-pendant" value="0,0,0,0,0,0,1,0" required="required">
-                        <label class="btn btn-outline-success" for="ring_type-pendant">
+                        <label class="btn btn-outline-success custom-button" for="ring_type-pendant">
                           pendant
                         </label>
                         <input class="btn-check" type="radio" name="ring_types" id="ring_type-zone" value="0,0,0,0,0,0,0,1" required="required">
-                        <label class="btn btn-outline-success" for="ring_type-zone">
+                        <label class="btn btn-outline-success custom-button" for="ring_type-zone">
+                          <img src="../static/images/zone.svg">
                           zone
+                        </label>
+                        <input class="btn-check" type="radio" name="ring_types" id="ring_type-none" value="0,0,0,0,0,1,0,0" required="required">
+                        <label class="btn btn-outline-success custom-button" for="ring_type-none">
+                          none
                         </label>
                       </div>
                   </fieldset>
@@ -500,7 +515,7 @@
                 <div class="tab"><center><h3>Other</h3></center>
                   <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Does It Bruise or Bleed?</legend>
-                    <div class="btn-group form-button">
+                    <div class="btn-group flex-wrap">
                       <input class="btn-check" type="radio" name="bruise_bleed" id="bruise_bleed-yes" value="0,1" required="required">
                       <label class="btn btn-outline-success" for="bruise_bleed-yes">
                         yes
@@ -513,7 +528,7 @@
                   </fieldset>
                   <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Habitat</legend>
-                      <div class="btn-group form-button">
+                      <div class="btn-group flex-wrap">
                         <input class="btn-check" type="radio" name="habitats" id="habitat-grasses" value="1,0,0,0,0,0,0,0" required="required">
                         <label class="btn btn-outline-success" for="habitat-grasses">
                           grasses
@@ -550,7 +565,7 @@
                   </fieldset>
                   <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Season</legend>
-                      <div class="btn-group form-button">
+                      <div class="btn-group flex-wrap">
                         <input class="btn-check" type="radio" name="seasons" id="season-autumn" value="1,0,0,0" required="required">
                         <label class="btn btn-outline-success" for="season-autumn">
                           autumn
@@ -573,7 +588,7 @@
               </div>
 
               <div style="overflow:auto;">
-                <div style="float:right;">
+                <div style="float:left;">
                   <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
                   <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
                 </div>
