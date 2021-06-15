@@ -42,20 +42,6 @@ body {
   padding: 20px;
 }
 
-/* .accordion-button {
-  font-family: 'aniron', Arial, sans-serif;
-  background-color: #FFE49A;
-  color: #F4876F;
-}
-
-.accordion-button.hover {
-  color: #ef4e2a;
-}
-
-.accordion-button.hover {
-  color: #ef4e2a;
-} */
-
 .my-button {
   font-family: 'aniron', Arial, sans-serif;
   background-color: #FFE49A;
@@ -74,11 +60,12 @@ body {
 .visual {
   background-color: #FFF1E0;
   border-radius: 10px;
-  box-shadow: 5px 10px 8px #888888;
+  box-shadow: 5px 5px 5px #888888;
   vertical-align: middle;
 }
 
 .button-group {
+  background-color: ivory;
   margin-left: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -124,10 +111,11 @@ body {
 /* Style the input fields */
 input {
   padding: 10px;
-  width: 100%;
+  width: 350px;
   font-size: 17px;
   font-family: Raleway;
   border: 1px solid #aaaaaa;
+  border-radius: 5px;
 }
 
 /* Mark input boxes that gets an error on validation: */
