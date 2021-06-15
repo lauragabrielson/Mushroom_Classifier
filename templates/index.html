@@ -124,10 +124,13 @@
 
               <div class="form-inputs">
                 <!-- cap section -->
+
                 <div class="tab">
                   <div class="row"><h3>Cap</h3></div>
                   <label for="colFormLabelLg" class="col-sm col-form-label-lg col-form-label"> Diameter (cm) </label>
-                  <p><input type="text" id="cap_diameter" placeholder="Enter a decimal between 0 and 62" required="required"></p>
+
+                  <p><input type="text" class="col-sm-6" name="cap_diameter" id="cap_diameter" placeholder="Enter a decimal between 0 and 62" required="required"></p>
+                  
                   <fieldset class="col-sm">
                     <legend class="col-sm col-form-label col-form-label-lg">Color</legend>
                     <div class="btn-group button-group">
@@ -376,10 +379,11 @@
                 <!-- stem section -->
                 <div class="tab"><center><h3>Stem</h3></center>
                   <label for="colFormLabelLg" class="col-sm col-form-label-lg col-form-label">  Stem Height (cm) </label>
-                  <p><input type="text" id="stem_height" placeholder="Enter a decimal between 0 and 36" required="required"></p>
+                  <p><input type="text" class="col-sm-3" id="stem_height" placeholder="Enter a decimal between 0 and 36" required="required"></p>
+
                   <label for="colFormLabelLg" class="col-sm col-form-label-lg col-form-label"> Stem Width (mm) </label>
-                  <p><input type="text" id="stem_width" placeholder="Enter a decimal between 0 and 100" required="required"></p>
-                  <fieldset class="col-sm">
+                  <p><input type="text" class="col-sm-3" id="stem_width" id="stem_width" placeholder="Enter a decimal between 0 and 100" required="required"></p>
+                  <fieldset class="row">
                     <legend class="col-sm col-form-label col-form-label-lg">Stem Color</legend>
                       <div class="btn-group form-button">
                         <input class="btn-check" type="radio" name="stem_colors" id="stem_color-black" value="1,0,0,0,0,0,0,0,0,0,0,0,0" required="required">
