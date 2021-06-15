@@ -90,7 +90,11 @@ h4 {
   width: 92px;
 }
 
-#cap_color-black.hover {
+.cap_co-black.hover {
+  background-color: black;
+}
+
+.cap_co-black.active {
   background-color: black;
 }
 
