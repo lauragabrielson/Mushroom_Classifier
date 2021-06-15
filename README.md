@@ -1,4 +1,4 @@
-# Mushroom_Classifier
+# Mushroom Classifier
 ## Using Machine Learning to Classify Mushrooms as Edible or Poisonous.
 #### University of Minnesota Data Visualization & Analysis Boot Camp
 Laura Gabrielson, Beau Jeffrey, Melissa Lowe, Stephanie Richards
@@ -8,7 +8,7 @@ For this project, we used a dataset from The Mushroom Project (https://mushroom.
 
 We then followed the same steps outlined in the European dataset to create a new simulated dataset based on North American species.  We combined these datasets in order to train our model to correctly classify both European and North American mushroom species.
 
-We evaluated several different maching learning models to classify our dataset including Random Foreast, Decision Tree, K Nearest Neighbors and a Neural Network.
+We evaluated several different maching learning models to classify our dataset including random forest, decision tree, k-nearest neighbors and neural network.
 
 This repo contains everthing necessary to recreate our project. Please follow the instructions listed below to run our machine learning models, display our findings and make a prediction. 
 
