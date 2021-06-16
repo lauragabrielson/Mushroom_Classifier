@@ -93,9 +93,9 @@ h4 {
 
 /* VISUALS */
 .visual {
-  background-color: #FFF1E0;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px #888888;
+  background-color: white;
+  border: solid;
+  border-color: #53df9e;
   vertical-align: middle;
 }
 
@@ -217,9 +217,9 @@ input.invalid {
 
 #redo-button {
   color: #ffffff;
-  background-color: #53df9e;
+  background-color: #3ddb92;
   border: solid;
-  border-color: #E8665A;
+  border-color: #146c43;
   padding: 10px 20px;
   margin-top: 50px;
   margin-bottom: 5px;
