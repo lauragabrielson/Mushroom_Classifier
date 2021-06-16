@@ -10,7 +10,6 @@ clip==0.2.0
 dataclasses==0.8
 decorator==5.0.9
 Flask==2.0.1
-Flask-SQLAlchemy==2.5.1
 flatbuffers==1.12
 gast==0.4.0
 google-auth==1.31.0
@@ -46,9 +45,9 @@ rsa==4.7.2
 scikit-learn==0.23.1
 scipy==1.5.4
 self==2020.12.3
+setuptools==52.0.0.post20210125
 six==1.15.0
 sklearn==0.0
-SQLAlchemy==1.4.18
 tensorboard==2.5.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.0
