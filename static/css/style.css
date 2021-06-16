@@ -35,13 +35,6 @@ h4 {
   color: #534653;
 }
 
-.container {
-  margin-top: 30px;
-  background-color: #7d6c7d4d;
-  padding: 0px;
-}
-
-
 /* ACCORDION */
 .accordion-item {
   background-color: #FFF1E0;
@@ -127,9 +120,7 @@ h4 {
 /* FORM */
 #predictForm {
   background-color: #ffffff;
-  margin: 20px auto;
   padding: 20px;
-  width: 95%;
 }
 
 .form-inputs {
@@ -199,16 +190,21 @@ input.invalid {
   border-radius: 5px;
 }
 
-#cap_color-black.hover {
-  background-color: black;
+.container {
+  position: relative;
+  margin-top: 10px;
+  background-color: #7d6c7d4d;
+  padding: 20px;
 }
 
 #result_window {
-  height: 250px;
-  width: 405px;
-  background-color: green;
-  position: absolute;
+  width: 50%;
+  height: 50%;
   z-index: 1;
-  top: 1200px;
-  right: 50px;
+  background-color: #4c4c9e;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
 }
+
