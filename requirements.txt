@@ -45,7 +45,6 @@ rsa==4.7.2
 scikit-learn==0.23.1
 scipy==1.5.4
 self==2020.12.3
-setuptools==52.0.0.post20210125
 six==1.15.0
 sklearn==0.0
 tensorboard==2.5.0
