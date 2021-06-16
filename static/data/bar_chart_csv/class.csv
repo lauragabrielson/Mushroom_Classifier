@@ -1,3 +1,5 @@
 value,count,color
-poisonous,33888,#3DF612
-edible,27181,#ff99ff
+EU-Poisonous,55,#3DF612
+NA-Poisonous,53,#3DF612
+EU-Edible,45,#ff99ff
+NA-Edible,47,#ff99ff

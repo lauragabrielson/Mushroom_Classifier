@@ -46,7 +46,7 @@ var svgHeight = 500;
 var margin = {
   top: 50,
   right: 50,
-  bottom: 80,
+  bottom: 110,
   left: 100
 };
 
@@ -111,7 +111,12 @@ function updateBar(ClickedData) {
       .attr("transform", `translate(0, ${chartHeight})`)
       .style("font-size", "14px")
       .style("font-family", "Raleway")
-      .call(bottomAxis);
+      .call(bottomAxis)
+        .selectAll("text")  
+        .style("text-anchor", "end")
+        .attr("dx", "-.8em")
+        .attr("dy", ".15em")
+        .attr("transform", "rotate(-65)");
 
     // Create one SVG rectangle per piece of mushData
     // Use the linear and band scales to position each rectangle within the chart
@@ -139,10 +144,10 @@ function updateBar(ClickedData) {
       .attr("x", 0 - (chartHeight / 2))
       .attr("dy", "1em")
       .attr("class", "axis-labels")
-      .text("Count of Occurences in Training Set");
+      .text("Percentage of Total Data");
 
     chartGroup.append("text")
-      .attr("transform", `translate(${(chartWidth / 2)}, ${chartHeight + margin.top})`)
+      .attr("transform", `translate(${(chartWidth / 2)}, ${chartHeight + margin.top + 30})`)
       .attr("class", "axis-labels")
       .text("Category");
 
