@@ -43,12 +43,12 @@ function nextPrev(n) {
     var req = new XMLHttpRequest();
     req.onload = function(e){
       //do something with this
-      e.currentTarget.response;
+      // document.getElementById("result_window")
+      document.getElementById("mushroom-response").innerText = `${e.currentTarget.response}`;
     };
     req.open("POST", "/predict");
     req.send(data);
-
-
+  
     return false;
   }
   // Otherwise, display the correct tab:

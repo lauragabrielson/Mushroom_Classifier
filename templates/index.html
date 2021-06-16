@@ -119,7 +119,7 @@
         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
           <div class="accordion-body">
 
-            <form class="needs-validation col-lg-12" id="predictForm" action="{{url_for('predict')}}" method="post" novalidate>
+            <form class="needs-validation col-lg-12" id="predictForm" method="post" novalidate>
               <div class="row"><center><h2>Let's have a look at your mushroom.</h2></center></div>
               <br>
 
@@ -587,6 +587,10 @@
                 </div>
               </div>
 
+              <div id="result_window">
+              <h1 id="mushroom-response"></h1>
+              </div>
+
               <div style="overflow:auto;">
                 <div style="float:left;">
                   <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
@@ -605,7 +609,6 @@
 
             <br>
             <br>
-            {{ prediction_text }}
           </div>
         </div>
       </div>

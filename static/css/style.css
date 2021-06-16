@@ -202,3 +202,13 @@ input.invalid {
 #cap_color-black.hover {
   background-color: black;
 }
+
+#result_window {
+  height: 250px;
+  width: 405px;
+  background-color: green;
+  position: absolute;
+  z-index: 1;
+  top: 1200px;
+  right: 50px;
+}
