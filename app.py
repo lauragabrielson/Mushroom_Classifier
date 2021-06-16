@@ -3,7 +3,7 @@ import numpy as np
 from flask import Flask, request, jsonify, render_template
 import joblib
 from pickle import load
-from tensorflow.keras.models import load_model
+# from tensorflow.keras.models import load_model
 # from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 # from tensorflow.keras.utils import to_categorical
 
