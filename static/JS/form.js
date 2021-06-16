@@ -43,12 +43,23 @@ function nextPrev(n) {
     var req = new XMLHttpRequest();
     req.onload = function(e){
 
-      function showResult() {
+      function showResult(result) {
         var x = document.getElementById("result_window");
+
+        var answer = result;
+
+        console.log(`the answer is: ${answer}`);
+
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
           x.style.display = "none";
+        }
+
+        if (answer == "Edible") {
+          x.classList.add("edible");
+        } else {
+          x.classList.add("poisonous");
         }
       }
 
@@ -58,12 +69,17 @@ function nextPrev(n) {
 
         var prevBtn = document.getElementById("prevBtn");
         prevBtn.style.display = "none";
+
+        var formIntro = document.getElementById("form-intro");
+        formIntro.style.display = "none";
       }
 
-      hideButtons();
-      showResult();
+      result = e.currentTarget.response
       // // document.getElementById("result_window")
-      document.getElementById("mushroom-response").innerText = `${e.currentTarget.response}`;
+      document.getElementById("mushroom-response").innerText = result;
+
+      hideButtons(result);
+      showResult(result);
 
     };
     req.open("POST", "/predict");
