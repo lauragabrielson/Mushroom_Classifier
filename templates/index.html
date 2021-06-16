@@ -610,13 +610,19 @@
                 </div>
               </form>
 
-              <div style="display: none;" id="result_window">
-                <h2 style="text-align: center; margin-top: 15px;"> Your mushroom is: </h2>
+              <div style="display: none; align-items: center;" id="result-window">
+                <div class="row">
+                  <h2 style="text-align: center; margin-top: 15px;"> Your mushroom is: </h2>
+                  <br>
+                  <h1 id="mushroom-response"></h1>
+                </div>
+                <div class="row">
+                  <center><img id="result-image" style="margin-top: 50px;" height="250"></center>
+                </div>
                 <br>
-                <h1 id="mushroom-response"></h1>
-                <br>
-                <br>
-                <center><button onClick="window.location.reload();">TRY OUT ANOTHER MUSHROOM</button></center>
+                <div class="row">
+                  <center><button type="button" id="redo-button" onClick="window.location.reload();">TRY OUT ANOTHER MUSHROOM</button></center>
+                </div>
               </div>
             </div>
 
