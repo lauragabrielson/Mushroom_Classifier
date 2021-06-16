@@ -42,9 +42,29 @@ function nextPrev(n) {
     var data = new FormData(form);
     var req = new XMLHttpRequest();
     req.onload = function(e){
-      //do something with this
-      // document.getElementById("result_window")
+
+      function showResult() {
+        var x = document.getElementById("result_window");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function hideButtons() {
+        var nextBtn = document.getElementById("nextBtn");
+        nextBtn.style.display = "none";
+
+        var prevBtn = document.getElementById("prevBtn");
+        prevBtn.style.display = "none";
+      }
+
+      hideButtons();
+      showResult();
+      // // document.getElementById("result_window")
       document.getElementById("mushroom-response").innerText = `${e.currentTarget.response}`;
+
     };
     req.open("POST", "/predict");
     req.send(data);
