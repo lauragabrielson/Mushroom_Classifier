@@ -114,7 +114,7 @@ h4 {
 .btn {
    border-radius: 0px 0px 0px 0px;
    background-color: #FFF1E0;
-  }
+}
 
 
 /* FORM */
@@ -197,9 +197,9 @@ input.invalid {
   padding: 20px;
 }
 
-#result_window {
-  width: 100%;
-  height: 100%;
+#result-window {
+  width: 95%;
+  height: 95%;
   z-index: 1;
   overflow: auto;
   margin: auto;
@@ -209,10 +209,22 @@ input.invalid {
 
 .edible {
   background-color: chartreuse;
-  background-image: url(https://1.bp.blogspot.com/-d2D69uZsVVw/WPEk1osZjQI/AAAAAAAAeZ8/sHDQOhVOXWQueMtACHP5P6Wi0Ry7HthZwCLcB/s1600/smoking_gnome_by_gnahz-d8yn4a5.jpg);
 }
 
 .poisonous {
-  background-color: crimson;
-  background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/skull-and-crossbones-eclectic-at-heart.jpg);
+  background-color: red;
+}
+
+#redo-button {
+  color: #ffffff;
+  background-color: #53df9e;
+  border: solid;
+  border-color: #E8665A;
+  padding: 10px 20px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+  border-radius: 5px;
 }

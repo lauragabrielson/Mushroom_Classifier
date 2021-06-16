@@ -44,22 +44,25 @@ function nextPrev(n) {
     req.onload = function(e){
 
       function showResult(result) {
-        var x = document.getElementById("result_window");
+        var window = document.getElementById("result-window");
+        var image = document.getElementById("result-image");
 
         var answer = result;
 
         console.log(`the answer is: ${answer}`);
 
-        if (x.style.display === "none") {
-          x.style.display = "block";
+        if (window.style.display === "none") {
+          window.style.display = "block";
         } else {
-          x.style.display = "none";
+          window.style.display = "none";
         }
 
         if (answer == "Edible") {
-          x.classList.add("edible");
+          window.classList.add("edible");
+          image.src = "../static/images/flaring.svg";
         } else {
-          x.classList.add("poisonous");
+          window.classList.add("poisonous");
+          image.src = "../static/images/skull.gif";
         }
       }
 
