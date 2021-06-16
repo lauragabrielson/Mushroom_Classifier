@@ -83,6 +83,10 @@ h4 {
   width: 92px;
 }
 
+.custom-button-colors {
+  width: 80px;
+}
+
 .cap_co-black.hover {
   background-color: black;
 }
@@ -198,11 +202,7 @@ input.invalid {
 }
 
 #result-window {
-  width: 95%;
-  height: 95%;
   z-index: 1;
-  overflow: auto;
-  margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
 }
