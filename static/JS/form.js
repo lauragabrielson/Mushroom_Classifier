@@ -37,7 +37,18 @@ function nextPrev(n) {
   // if you have reached the end of the form... :
   if (currentTab >= x.length) {
     //...the form gets submitted:
-    document.getElementById("predictForm").submit();
+    // document.getElementById("predictForm").submit();
+    var form = document.querySelector('#predictForm');
+    var data = new FormData(form);
+    var req = new XMLHttpRequest();
+    req.onload = function(e){
+      //do something with this
+      e.currentTarget.response;
+    };
+    req.open("POST", "/predict");
+    req.send(data);
+
+
     return false;
   }
   // Otherwise, display the correct tab:

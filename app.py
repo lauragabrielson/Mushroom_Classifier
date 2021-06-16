@@ -235,7 +235,8 @@ def predict():
 
     # Render a template that shows the result.
     prediction_text = f'Mushroom is predicted to be :  {prediction}'
-    return render_template('index.html', prediction_text=prediction_text)
+    # return render_template('index.html', prediction_text=prediction_text)
+    return prediction
 
 
 # Allow the Flask app to launch from the command line
