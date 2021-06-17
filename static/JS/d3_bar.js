@@ -98,23 +98,21 @@ function updateBar(ClickedData) {
       .enter()
       .append("rect")
       .style("fill", d => d.color)
-      .attr("x", d => xBandScale(d.value))
-      .attr("y", chartHeight)
-      .attr("width", xBandScale.bandwidth())
-      .attr("height", d => chartHeight - yLinearScale(0))
-      .append("text")
+        .attr("x", d => xBandScale(d.value))
+        .attr("y", chartHeight)
+        .attr("width", xBandScale.bandwidth())
+        .attr("height", d => chartHeight - yLinearScale(0))
+      .join("text")
       .text(function(d) {
         console.log(d.count);
         return d.count + '%';
       })
-      .attr("text-anchor", "middle")
-      .attr("x", d => xBandScale(d.value) + xBandScale.bandwidth() / 2)
-      .attr("y", d => chartHeight - yLinearScale(d.count) + 15)
-      .attr("font-family", "sans-serif")
-      .attr("font-size", "13px")
-      .attr("fill", "black");
-      
-  
+        .attr("text-anchor", "middle")
+        // .attr("x", d => xBandScale(d.value) + xBandScale.bandwidth() / 2)
+        // .attr("y", d => chartHeight - yLinearScale(d.count) + 15)
+        .attr("font-family", "sans-serif")
+        .attr("font-size", "13px")
+        .attr("fill", "black");
 
     chartGroup.selectAll("rect")
       .transition()
@@ -138,34 +136,35 @@ function updateBar(ClickedData) {
       .text("Category");
 
     
-    chartGroup.selectAll("text")
-      .data(mushData)
-      .enter()
-      .append("text")
-      .text(function(d) {
-        console.log(d);
-        return d.count + '%';
-      })
-      .attr("text-anchor", "middle")
-      .attr("x", d => xBandScale(d.value) + xBandScale.bandwidth() / 2)
-      .attr("y", d => chartHeight - yLinearScale(d.count) + 15)
-      .attr("font-family", "sans-serif")
-      .attr("font-size", "13px")
-      .attr("fill", "black");
+
+    // chartGroup.select("text")
+    //   .data(mushData)
+    //   .enter()
+    //   .append("text")
+    //   .text(function(d) {
+    //     console.log(d);
+    //     return d.count + '%';
+    //   })
+    //   .attr("text-anchor", "middle")
+    //   .attr("x", d => xBandScale(d.value) + xBandScale.bandwidth() / 2)
+    //   .attr("y", d => chartHeight - yLinearScale(d.count) + 15)
+    //   .attr("font-family", "sans-serif")
+    //   .attr("font-size", "13px")
+      // .attr("fill", "black");
     
     
-    chartGroup.selectAll("rect")
-      .data(mushData)
-      .enter()
-      .append("text")
-      .text(d => {console.log(d) ; d.count})
-      // .text(function(d) {return d.count;})
-      .attr("text-anchor", "middle")
-      .attr("x", d => xBandScale(d.value) + xBandScale.bandwidth() / 2)
-      .attr("y", d => chartHeight - yLinearScale(d.count) + 15)
-      .attr("font-family", "sans-serif")
-      .attr("font-size", "13px")
-      .attr("fill", "black");
+    // chartGroup.selectAll("rect")
+    //   .data(mushData)
+    //   .enter()
+    //   .append("text")
+    //   .text(d => {console.log(d) ; d.count})
+    //   // .text(function(d) {return d.count;})
+    //   .attr("text-anchor", "middle")
+    //   .attr("x", d => xBandScale(d.value) + xBandScale.bandwidth() / 2)
+    //   .attr("y", d => chartHeight - yLinearScale(d.count) + 15)
+    //   .attr("font-family", "sans-serif")
+    //   .attr("font-size", "13px")
+    //   .attr("fill", "black");
 
   }).catch(function(error) {
     console.log(error);
