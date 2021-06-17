@@ -1,5 +1,9 @@
 value,count,color
-autumn,30150,#ff9900
-summer,22857,#84B674
-winter,5333,#99ccff
-spring,2729,#03FF7F
+EU-Autumn,49,#ff9900
+NA-Autumn,47,#ff9900
+EU-Summer,37,#84B674
+NA-Summer,41,#84B674
+EU-Winter,9,#99ccff
+NA-Winter,1,#99ccff
+EU-Spring,5,#03FF7F
+NA-Spring,11,#03FF7F

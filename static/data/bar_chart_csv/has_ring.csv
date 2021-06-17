@@ -1,3 +1,5 @@
 value,count,color
-False,45890,#e6e6e6
-True,15179,#666666
+EU-False,75,#e6e6e6
+NA-False,78,#e6e6e6
+EU-True,25,#666666
+NA-True,22,#666666
