@@ -42,13 +42,52 @@ function nextPrev(n) {
     var data = new FormData(form);
     var req = new XMLHttpRequest();
     req.onload = function(e){
-      //do something with this
-      e.currentTarget.response;
+
+      function showResult(result) {
+        var window = document.getElementById("result-window");
+        var image = document.getElementById("result-image");
+
+        var answer = result;
+
+        console.log(`the answer is: ${answer}`);
+
+        if (window.style.display === "none") {
+          window.style.display = "block";
+        } else {
+          window.style.display = "none";
+        }
+
+        if (answer == "Edible") {
+          window.classList.add("edible");
+          image.src = "https://media1.tenor.com/images/65cf2fae3c9167c43e08c93c581b631d/tenor.gif?itemid=11918844";
+        } else {
+          window.classList.add("poisonous");
+          image.src = "../static/images/skull.gif";
+        }
+      }
+
+      function hideButtons() {
+        var nextBtn = document.getElementById("nextBtn");
+        nextBtn.style.display = "none";
+
+        var prevBtn = document.getElementById("prevBtn");
+        prevBtn.style.display = "none";
+
+        var formIntro = document.getElementById("form-intro");
+        formIntro.style.display = "none";
+      }
+
+      result = e.currentTarget.response
+      // // document.getElementById("result_window")
+      document.getElementById("mushroom-response").innerText = result;
+
+      hideButtons(result);
+      showResult(result);
+
     };
     req.open("POST", "/predict");
     req.send(data);
-
-
+  
     return false;
   }
   // Otherwise, display the correct tab:

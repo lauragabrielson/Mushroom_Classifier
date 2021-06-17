@@ -1,4 +1,7 @@
 value,count,color
-close,49773,#b34cf3
-distant,7766,#CF8FF7
-none,3530,#d3d3d3
+EU-Close,82,#b34cf3
+NA-Close,69,#b34cf3
+EU-Distant,13,#CF8FF7
+NA-Distant,15,#CF8FF7
+EU-None,5,#d3d3d3
+NA-None,16,#d3d3d3

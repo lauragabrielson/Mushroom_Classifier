@@ -31,16 +31,18 @@ h3 {
   color: #534653;
 }
 
-h4 {
-  color: #534653;
+h4 {font-weight:bold;
+  color: #814e81;
 }
-
-.container {
-  margin-top: 30px;
-  background-color: #7d6c7d4d;
-  padding: 0px;
+h5 {
+  color: #814e81;
 }
-
+h6 {font-weight:bold;
+  color: #ef4e2a;
+}
+h7 {font-weight:bold;
+  color: #814e81;
+}
 
 /* ACCORDION */
 .accordion-item {
@@ -90,6 +92,10 @@ h4 {
   width: 92px;
 }
 
+.custom-button-colors {
+  width: 80px;
+}
+
 .cap_co-black.hover {
   background-color: black;
 }
@@ -100,9 +106,9 @@ h4 {
 
 /* VISUALS */
 .visual {
-  background-color: #FFF1E0;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px #888888;
+  background-color: white;
+  border: solid;
+  border-color: #53df9e;
   vertical-align: middle;
 }
 
@@ -121,15 +127,13 @@ h4 {
 .btn {
    border-radius: 0px 0px 0px 0px;
    background-color: #FFF1E0;
-  }
+}
 
 
 /* FORM */
 #predictForm {
   background-color: #ffffff;
-  margin: 20px auto;
   padding: 20px;
-  width: 95%;
 }
 
 .form-inputs {
@@ -199,6 +203,37 @@ input.invalid {
   border-radius: 5px;
 }
 
-#cap_color-black.hover {
-  background-color: black;
+.container {
+  position: relative;
+  margin-top: 10px;
+  background-color: #7d6c7d4d;
+  padding: 20px;
+}
+
+#result-window {
+  z-index: 1;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.edible {
+  background-color: chartreuse;
+}
+
+.poisonous {
+  background-color: red;
+}
+
+#redo-button {
+  color: #ffffff;
+  background-color: #3ddb92;
+  border: solid;
+  border-color: #146c43;
+  padding: 10px 20px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+  border-radius: 5px;
 }

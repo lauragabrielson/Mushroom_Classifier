@@ -1,18 +1,43 @@
 console.log('d3_bar.js loaded')
 
 dataClass = "../static/data/bar_chart_csv/class.csv"
+dataClassNA = "../static/sata/bar_chart_csv/na_class.csv"
+
 dataCapColor = "../static/data/bar_chart_csv/cap_color.csv"
+dataCapColorNA = "../static/data/bar_chart_csv/na_cap_color.csv"
+
 dataCapShape = "../static/data/bar_chart_csv/cap_shape.csv"
+dataCapShapeNA = "../static/data/bar_chart_csv/na_cap_shape.csv"
+
 dataCapSurface = "../static/data/bar_chart_csv/cap_surface.csv"
+dataCapSurfaceNA = "../static/data/bar_chart_csv/na_cap_surface.csv"
+
 dataBruiseBleed = "../static/data/bar_chart_csv/bruise_bleed.csv"
+dataBruiseBleedNA = "../static/data/bar_chart_csv/na_bruise_bleed.csv"
+
 dataGillAttachment = "../static/data/bar_chart_csv/gill_attachment.csv"
+dataGillAttachmentNA = "../static/data/bar_chart_csv/na_gill_attachment.csv"
+
 dataGillColor = "../static/data/bar_chart_csv/gill_color.csv"
+dataGillColorNA = "../static/data/bar_chart_csv/na_gill_color.csv"
+
 dataGillSpacing = "../static/data/bar_chart_csv/gill_spacing.csv"
+dataGillSpacingNA = "../static/data/bar_chart_csv/na_gill_spacing.csv"
+
 dataHabitat = "../static/data/bar_chart_csv/habitat.csv"
+dataHabitatNA = "../static/data/bar_chart_csv/na_habitat.csv"
+
 dataRing = "../static/data/bar_chart_csv/has_ring.csv"
+dataRingNA = "../static/data/bar_chart_csv/na_has_ring.csv"
+
 dataRingType = "../static/data/bar_chart_csv/ring_type.csv"
+dataRingTypeNA = "../static/data/bar_chart_csv/na_ring_type.csv"
+
 dataSeason = "../static/data/bar_chart_csv/season.csv"
+dataSeasonNA = "../static/data/bar_chart_csv/na_season.csv"
+
 dataStemColor = "../static/data/bar_chart_csv/stem_color.csv"
+dataStemColorNA = "../static/data/bar_chart_csv/na_stem_color.csv"
 
 var svgWidth = 960;
 var svgHeight = 500;
@@ -21,7 +46,7 @@ var svgHeight = 500;
 var margin = {
   top: 50,
   right: 50,
-  bottom: 80,
+  bottom: 110,
   left: 100
 };
 
@@ -86,7 +111,12 @@ function updateBar(ClickedData) {
       .attr("transform", `translate(0, ${chartHeight})`)
       .style("font-size", "14px")
       .style("font-family", "Raleway")
-      .call(bottomAxis);
+      .call(bottomAxis)
+        .selectAll("text")  
+        .style("text-anchor", "end")
+        .attr("dx", "-.8em")
+        .attr("dy", ".15em")
+        .attr("transform", "rotate(-65)");
 
     // Create one SVG rectangle per piece of mushData
     // Use the linear and band scales to position each rectangle within the chart
@@ -114,10 +144,10 @@ function updateBar(ClickedData) {
       .attr("x", 0 - (chartHeight / 2))
       .attr("dy", "1em")
       .attr("class", "axis-labels")
-      .text("Count of Occurences in Training Set");
+      .text("Percentage of Total Data");
 
     chartGroup.append("text")
-      .attr("transform", `translate(${(chartWidth / 2)}, ${chartHeight + margin.top})`)
+      .attr("transform", `translate(${(chartWidth / 2)}, ${chartHeight + margin.top + 30})`)
       .attr("class", "axis-labels")
       .text("Category");
 
