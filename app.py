@@ -37,7 +37,7 @@ def home():
 def predict():
 
     # Create a list of the output labels.
-    prediction_labels = ['Edible', 'Poisonous']
+    prediction_labels = ['EE', 'EP', 'NE', 'NP']
 
     # Create lists to hold quantitative qualitative data
     quantitative = []
