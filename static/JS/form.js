@@ -1,12 +1,9 @@
-console.log("form.js loaded");
-
 // found this code one w3 schools. Works great.
 
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
 function showTab(n) {
-    console.log(n);
   // This function will display the specified tab of the form ...
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
@@ -50,19 +47,19 @@ function nextPrev(n) {
         var resultArray = []
   
         if (answer == "EE") {
-          resultArray = ["European" , "Edible"];
+          resultArray = ["Europe" , "Edible"];
         }
         if (answer == "EP") {
-          resultArray = ["European" , "Poisonous"];
+          resultArray = ["Europe" , "Poisonous"];
         }
         if (answer == "NE") {
-          resultArray = ["North American" , "Edible"];
+          resultArray = ["North America" , "Edible"];
         }
         if (answer == "NP") {
-          resultArray = ["North American" , "Poisonous"];
+          resultArray = ["North America" , "Poisonous"];
         }
-  
-        console.log(resultArray);
+
+        return resultArray
       }
 
       function showResult(result) {
@@ -70,8 +67,6 @@ function nextPrev(n) {
         var image = document.getElementById("result-image");
 
         var answer = result;
-
-        console.log(`the answer is: ${result}`);
 
         if (window.style.display === "none") {
           window.style.display = "block";
@@ -100,8 +95,13 @@ function nextPrev(n) {
       }
 
       result = e.currentTarget.response
+
+      resultContinent = convertResult(result)[0];
+      resultClass = convertResult(result)[1];
+
       // // document.getElementById("result_window")
-      document.getElementById("mushroom-response").innerText = result;
+      document.getElementById("mushroom-class").innerText = resultClass;
+      document.getElementById("mushroom-continent").innerText = resultContinent;
 
       convertResult(result);
       hideButtons(result);

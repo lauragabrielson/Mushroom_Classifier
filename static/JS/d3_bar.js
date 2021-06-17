@@ -1,5 +1,3 @@
-console.log('d3_bar.js loaded')
-
 dataClass = "../static/data/bar_chart_csv/class.csv"
 dataClassNA = "../static/sata/bar_chart_csv/na_class.csv"
 
