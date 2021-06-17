@@ -105,7 +105,7 @@ function nextPrev(n) {
 
       convertResult(result);
       hideButtons(result);
-      showResult(result);
+      showResult(resultClass);
 
     };
     req.open("POST", "/predict");
