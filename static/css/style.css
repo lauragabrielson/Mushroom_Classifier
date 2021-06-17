@@ -23,8 +23,8 @@ h1 {
   text-align: center;
   }
 
-h2 {
-  color: #ef4e2a;
+h2 {font-weight:bold;
+  color: #FF8C64;
 }
 
 h3 {
@@ -32,17 +32,28 @@ h3 {
 }
 
 h4 {font-weight:bold;
+  color: #FF8C64;
+}
+h5 {font-family: Georgia, 'Times New Roman', Times, serif;
   color: #814e81;
 }
-h5 {
-  color: #814e81;
-}
-h6 {font-weight:bold;
+h6 {font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight:bold;
   color: #ef4e2a;
 }
 h7 {font-weight:bold;
   color: #814e81;
 }
+a {
+  color: #814e81;
+}
+a:visited {
+  color: #636;
+}
+a:hover, a:active, a:focus {
+  color:#FF8C64;
+}
+
 
 /* ACCORDION */
 .accordion-item {
