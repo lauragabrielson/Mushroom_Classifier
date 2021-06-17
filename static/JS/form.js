@@ -37,11 +37,33 @@ function nextPrev(n) {
   // if you have reached the end of the form... :
   if (currentTab >= x.length) {
     //...the form gets submitted:
-    // document.getElementById("predictForm").submit();
+
     var form = document.querySelector('#predictForm');
     var data = new FormData(form);
     var req = new XMLHttpRequest();
     req.onload = function(e){
+
+      function convertResult(result) {
+
+        var answer = result;
+
+        var resultArray = []
+  
+        if (answer == "EE") {
+          resultArray = ["European" , "Edible"];
+        }
+        if (answer == "EP") {
+          resultArray = ["European" , "Poisonous"];
+        }
+        if (answer == "NE") {
+          resultArray = ["North American" , "Edible"];
+        }
+        if (answer == "NP") {
+          resultArray = ["North American" , "Poisonous"];
+        }
+  
+        console.log(resultArray);
+      }
 
       function showResult(result) {
         var window = document.getElementById("result-window");
@@ -49,7 +71,7 @@ function nextPrev(n) {
 
         var answer = result;
 
-        console.log(`the answer is: ${answer}`);
+        console.log(`the answer is: ${result}`);
 
         if (window.style.display === "none") {
           window.style.display = "block";
@@ -81,6 +103,7 @@ function nextPrev(n) {
       // // document.getElementById("result_window")
       document.getElementById("mushroom-response").innerText = result;
 
+      convertResult(result);
       hideButtons(result);
       showResult(result);
 
