@@ -14,7 +14,7 @@ This repo contains everthing necessary to recreate our project. Please follow th
 
 ## Instructions
 1. Clone repo.
-1. Open a Terminal/Gitbash on the root folder (Mushroom_Classifiew)
+1. Open a Terminal/Gitbash on the root folder (Mushroom_Classifier)
 1. Type ```source activate PythonData``` and press the enter key to activate the Python environment.
 1. Type ```jupyter notebook``` launch the Jupyter Notebook.
 1. Open the *.ipynb* files.
