@@ -24,7 +24,7 @@ FILE_PATH_COLUMN_MATCHING_EDITED = "data/data_columns_encoded_matching_edited.cs
 
 
 ## EDIT: file paths for North American species
-FILE_PATH_NA_PRIMARY = "north_american_primary_data_semicolons.csv"
+FILE_PATH_NA_PRIMARY = "north_american_primary_data.csv"
 FILE_PATH_NA_SECONDARY_GENERATED = "north_american_secondary_data_generated.csv"
 FILE_PATH_NA_SECONDARY_SHUFFLED = "north_american_secondary_data_shuffled.csv"
 

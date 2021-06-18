@@ -14,13 +14,22 @@ This repo contains everthing necessary to recreate our project. Please follow th
 
 ## Instructions
 1. Clone repo.
-1. Open a Terminal/Gitbash on the root folder (Mushroom_Classifiew)
+1. Open a Terminal/Gitbash on the root folder (Mushroom_Classifier)
 1. Type ```source activate PythonData``` and press the enter key to activate the Python environment.
 1. Type ```jupyter notebook``` launch the Jupyter Notebook.
 1. Open the *.ipynb* files.
 1. Run all of the cells in the *.ipynb* files.
 1. In your Terminal/Gitbash, type ```python app.py``` and hit enter to run the Flask app.
 1. [Click this link](http://127.0.0.1:5000/) or open a web browser--preferrably Google Chrome--and type ```http://127.0.0.1:5000/``` into the url bar. Hit enter.
+
+## How to Recreate the North American data
+1. Open a Terminal/Gitbash window on the "NA_data_generation" folder.
+1. Type ```source activate PythonData```.
+1. Type ```python secondary_data_gen.py```. **WARNING**: Running this file will overwrite "north_american_secondary_data_generate.csv" and "north_american_secondary_data_shuffled.csv".
+1. From this point, you can run the "North_American_Mushrooms_secondary_data.ipynb" file. You will be able to run it up to cell 76. This cell will export a .csv file that will need to be shuffled before work can continue.
+1. In your Terminal/Bash window, type ```python shuffle_data.py```. **WARNING**: Running this file will overwrite "all_mushroom_data_shuffled.csv".
+1. Continue in the Jupyter Notebook until the end. This will dump pickled scaler and model files for the Random Forest model, using two outputs.
+1. To create the machine learning models with four outputs, open and run the Jupyter Notebook called "four_output_machine_learning" through cell 8. In your Terminal/Bash window, run ```python four_output_shuffle.py```. Continue in the Jupyter Notebook until the end. Use the pickled scaler and model for the Random Forest type to import into app.py in the root directory.
 
 ## Guide to Navigating the Website:
 
