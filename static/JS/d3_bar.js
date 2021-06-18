@@ -123,6 +123,7 @@ function updateBar(ClickedData) {
       .attr("transform", `translate(${(chartWidth / 2)}, ${chartHeight + margin.top + 30})`)
       .attr("class", "axis-labels")
       .text("Category");
+
     
     chartGroup.selectAll(".bar")
       .data(mushData)

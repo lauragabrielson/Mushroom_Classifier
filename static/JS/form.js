@@ -117,27 +117,61 @@ function nextPrev(n) {
   showTab(currentTab);
 }
 
+
+
+//Does a groupby like in SQL
+/**
+ * @template T, S
+ * @param {T[]} array 
+ * @param {function(T): S} selector
+ * @returns {Map.<S,T[]>}
+ */
+function groupBy(array, selector){
+  const len = array.length;
+  const outputMap = new Map();
+  for(let i = 0; i < len; i++){
+    const value = array[i];
+    const key = selector(value);
+    const collection = outputMap.get(key);
+    if(collection === undefined)
+      outputMap.set(key, [value]);
+    else
+      collection.push(value);
+  }
+  return outputMap;
+}
+
 function validateForm() {
   // This function deals with validation of the form fields
-  var x, y, i, valid = true;
-  x = document.getElementsByClassName("tab");
-  y = x[currentTab].getElementsByTagName("input");
+  var tabGroup, nameGroups;
+  tabGroup = document.getElementsByClassName("tab");
+  nameGroups = groupBy(tabGroup[currentTab].getElementsByTagName("input"), x => x.name);
   // A loop that checks every input field in the current tab:
-  for (i = 0; i < y.length; i++) {
+  let returnValue = true;
+  for (let [key, nameGroup] of nameGroups) {
+    const validation = nameGroup.some(x => {
+      if(x.type == 'radio'){
+        return x.checked;
+      } else if(x.type == 'text') {
+        return x.value != '' && !isNaN(x.value);
+      } else {
+        throw "Not implemented";
+      }
+    });
     // If a field is empty...
-    if (y[i].value == "") {
+    if (!validation) {
       // add an "invalid" class to the field:
-      y[i].className += " invalid";
-      // and set the current valid status to false:
-      valid = false;
+      nameGroup.forEach(x => x.className += " invalid");
+
+      returnValue = false;
     }
   }
   // If the valid status is true, mark the step as finished and valid:
-  if (valid) {
+  if (returnValue) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
 
-  return valid; // return the valid status
+  return returnValue; // return the valid status
 }
 
 function fixStepIndicator(n) {
