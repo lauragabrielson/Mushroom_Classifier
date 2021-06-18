@@ -30,6 +30,7 @@ mushroom_scaler = load(open('combined_data_scaler.pkl','rb'))
 def home():
     return render_template('index.html')
 
+
 # Define a route that runs when the user clicks the Predict button in the web-app
 # Many thanks to Farshad and Dom for the initial code to create this prediction function!
 # As well as the help in adjusting it to work with a neural network
