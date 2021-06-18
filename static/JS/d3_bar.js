@@ -135,8 +135,6 @@ function updateBar(ClickedData) {
       .attr("class", "axis-labels")
       .text("Category");
 
-    
-
     // chartGroup.select("text")
     //   .data(mushData)
     //   .enter()
