@@ -102,17 +102,6 @@ function updateBar(ClickedData) {
         .attr("y", chartHeight)
         .attr("width", xBandScale.bandwidth())
         .attr("height", d => chartHeight - yLinearScale(0))
-      .join("text")
-      .text(function(d) {
-        console.log(d.count);
-        return d.count + '%';
-      })
-        .attr("text-anchor", "middle")
-        // .attr("x", d => xBandScale(d.value) + xBandScale.bandwidth() / 2)
-        // .attr("y", d => chartHeight - yLinearScale(d.count) + 15)
-        .attr("font-family", "sans-serif")
-        .attr("font-size", "13px")
-        .attr("fill", "black");
 
     chartGroup.selectAll("rect")
       .transition()
@@ -134,37 +123,25 @@ function updateBar(ClickedData) {
       .attr("transform", `translate(${(chartWidth / 2)}, ${chartHeight + margin.top + 30})`)
       .attr("class", "axis-labels")
       .text("Category");
-
     
-
-    // chartGroup.select("text")
-    //   .data(mushData)
-    //   .enter()
-    //   .append("text")
-    //   .text(function(d) {
-    //     console.log(d);
-    //     return d.count + '%';
-    //   })
-    //   .attr("text-anchor", "middle")
-    //   .attr("x", d => xBandScale(d.value) + xBandScale.bandwidth() / 2)
-    //   .attr("y", d => chartHeight - yLinearScale(d.count) + 15)
-    //   .attr("font-family", "sans-serif")
-    //   .attr("font-size", "13px")
-      // .attr("fill", "black");
+    chartGroup.selectAll(".bar")
+      .data(mushData)
+      .enter()
+      .append("text")
+      .text(d => {console.log(d) ; return d.count + "%"})
+      .attr("text-anchor", "middle")
+      .attr("x", d => xBandScale(d.value) + xBandScale.bandwidth() / 2)
+      .attr("y", d => yLinearScale(d.count) - 3)
+      .attr("font-family", "sans-serif")
+      .attr("font-size", "14px")
+      .attr("fill", "white");
     
-    
-    // chartGroup.selectAll("rect")
-    //   .data(mushData)
-    //   .enter()
-    //   .append("text")
-    //   .text(d => {console.log(d) ; d.count})
-    //   // .text(function(d) {return d.count;})
-    //   .attr("text-anchor", "middle")
-    //   .attr("x", d => xBandScale(d.value) + xBandScale.bandwidth() / 2)
-    //   .attr("y", d => chartHeight - yLinearScale(d.count) + 15)
-    //   .attr("font-family", "sans-serif")
-    //   .attr("font-size", "13px")
-    //   .attr("fill", "black");
+    chartGroup.selectAll("text")
+      .transition()
+      .duration(700)
+      .ease(d3.easeCubicInOut)
+      .attr("fill", "black")
+      .delay(function(d,i){return(i*50)});
 
   }).catch(function(error) {
     console.log(error);
