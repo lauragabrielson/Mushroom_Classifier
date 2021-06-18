@@ -15,7 +15,7 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 # Load the model from its pickle file. (This pickle 
 # file was originally saved by the code that trained 
 # the model. See mlmodel.py)
-mushroom_model = joblib.load('combined_data_rf_model.pkl')
+mushroom_model = joblib.load('four_output_rf_model.pkl')
 # from tensorflow.keras.models import load_model
 # mushroom_model = load_model("app_mushroom_trained.h5")
 
@@ -23,7 +23,7 @@ mushroom_model = joblib.load('combined_data_rf_model.pkl')
 # # file was originally saved by the code that trained 
 # # the model. See mlmodel.py)
 # mushroom_scaler = load(open('mush_nn_scale.pkl','rb'))
-mushroom_scaler = load(open('combined_data_scaler.pkl','rb'))
+mushroom_scaler = load(open('four_output_rf_scaler.pkl','rb'))
 
 # Define the index route
 @app.route('/')
