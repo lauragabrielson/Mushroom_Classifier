@@ -107,6 +107,10 @@ a:hover, a:active, a:focus {
   width: 80px;
 }
 
+.custom-button-surfaces {
+  width: 150px;
+}
+
 .cap_co-black.hover {
   background-color: black;
 }
