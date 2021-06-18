@@ -12,6 +12,8 @@ We evaluated several different maching learning models to classify our dataset i
 
 This repo contains everthing necessary to recreate our project. Please follow the instructions listed below to run our machine learning models, display our findings and make a prediction. 
 
+## How to Recreate the North American data
+
 ## Instructions
 1. Clone repo.
 1. Open a Terminal/Gitbash on the root folder (Mushroom_Classifier)
