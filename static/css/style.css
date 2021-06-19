@@ -152,7 +152,7 @@ a:hover, a:active, a:focus {
 }
 
 .form-inputs {
-  min-height: 475px;
+  min-height: 500px;
 }
 
 input {
@@ -229,14 +229,15 @@ input.invalid {
   z-index: 1;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
+  height: 700px;
 }
 
 .edible {
-  background-color: chartreuse;
+  background-color: #65A599;
 }
 
 .poisonous {
-  background-color: red;
+  background-color: #aa0202;
 }
 
 #redo-button {
