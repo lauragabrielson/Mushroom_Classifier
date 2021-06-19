@@ -76,7 +76,7 @@ function nextPrev(n) {
 
         if (answer == "Edible") {
           window.classList.add("edible");
-          image.src = "https://media1.tenor.com/images/65cf2fae3c9167c43e08c93c581b631d/tenor.gif?itemid=11918844";
+          image.src = "../static/images/bear.gif";
         } else {
           window.classList.add("poisonous");
           image.src = "../static/images/skull.gif";
